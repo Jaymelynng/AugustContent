@@ -1289,16 +1289,37 @@ h4 {
 
 .news-grid {
   padding: 2rem;
-  min-height: 100px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #a0aec0;
-  font-style: italic;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.news-grid:empty::after {
-  content: "No updates at this time. Check back soon!";
+.news-item {
+  background: linear-gradient(135deg, #4a5568, #2d3748);
+  border-radius: 0.8rem;
+  border: 2px solid #718096;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.news-item h3 {
+  color: white !important;
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.news-item p {
+  color: #e2e8f0 !important;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.6;
+}
+
+.news-item p:last-child {
+  margin: 0;
 }
 
 .news-footer {
