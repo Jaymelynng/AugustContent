@@ -18,7 +18,7 @@ export function PlaygroundBossSection() {
       </h1>
 
       <div className="content-section">
-        <h3>🎥 15–20 seconds each</h3>
+        <h3>📅 August Content</h3>
       </div>
 
       <div className="desc">
