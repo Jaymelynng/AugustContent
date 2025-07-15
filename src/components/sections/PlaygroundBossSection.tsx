@@ -38,12 +38,14 @@ export function PlaygroundBossSection() {
 
       <div className="requirements">
         <h3>📌 Video Content to Capture</h3>
+        <p>🎥 Create 3 short video clips (15–20 seconds each) — one per skill listed below.</p>
+        <p>Each clip = a mini edit that combines multiple shots or angles of the same skill.</p>
         <p>Each of the 3 videos should be:</p>
         <ul>
-          <li><strong>15–20 seconds long</strong></li>
-          <li><strong>Include multiple angles or shots</strong></li>
-          <li><strong>Edited by you into one complete video clip</strong></li>
-          <li><strong>No overlays needed</strong> — we'll add transitions and visuals later</li>
+          <li>⏱️ <strong>15–20 seconds long</strong></li>
+          <li>🎬 <strong>Include multiple angles or shots</strong></li>
+          <li>✂️ <strong>Edited by you into one complete clip per skill</strong></li>
+          <li>🛠️ <strong>No overlays needed</strong> — I'll add transitions and visuals to show how each skill connects to its real-life playground version.</li>
         </ul>
       </div>
 
