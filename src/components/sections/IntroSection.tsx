@@ -38,7 +38,7 @@ export function IntroSection() {
         </div>
         
         <h1 className="mission-title">July Content Mission</h1>
-        <h1 className="mission-title">August Content Mission</h1>
+        <p className="mission-subtitle">Content collected in July for August posting</p>
       </div>
 
       {/* Mission Statement */}
