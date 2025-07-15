@@ -13,6 +13,7 @@ const navigationItems = [
   // Content Assignments
   { id: 'back-to-school-balance', label: 'Back to School Balance', icon: Camera, category: 'content' },
   { id: 'pencil-grip-strength', label: 'Pencil Grip Strength', icon: Camera, category: 'content' },
+  { id: 'playground-boss', label: 'Become A Boss On The Playground', icon: Video, category: 'content' },
   
   // Guides
   { id: 'guidelines', label: 'Guidelines', icon: FileText, category: 'guides' },
