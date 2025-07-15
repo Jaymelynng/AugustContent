@@ -22,7 +22,7 @@ export function PencilGripStrengthSection() {
       </h1>
 
       <div className="content-section">
-        <h3>Friday, August 8</h3>
+        <h3>📅 August Content</h3>
       </div>
 
       <div className="desc">

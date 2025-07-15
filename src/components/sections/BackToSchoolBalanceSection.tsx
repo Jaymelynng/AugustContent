@@ -19,7 +19,7 @@ export function BackToSchoolBalanceSection() {
       </h1>
 
       <div className="content-section">
-        <h3>📅 Tuesday, August 5</h3>
+        <h3>📅 August Content</h3>
       </div>
 
       <div className="desc">
