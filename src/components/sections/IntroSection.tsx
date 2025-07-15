@@ -127,6 +127,41 @@ export function IntroSection() {
         
         <div className="news-grid">
           <div style={{
+            background: 'linear-gradient(135deg, #28a745, #20c997)',
+            padding: '1.5rem',
+            borderRadius: '0.8rem',
+            border: '2px solid #17a2b8',
+            color: 'white',
+            marginBottom: '1rem'
+          }}>
+            <h3 style={{ 
+              color: 'white', 
+              margin: '0 0 1rem 0', 
+              fontSize: '1.2rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem'
+            }}>
+              🎉 August Content is Now Live!
+            </h3>
+            <p style={{ 
+              color: '#e8f5e8', 
+              margin: '0 0 0.5rem 0',
+              lineHeight: '1.6'
+            }}>
+              <strong>Updated January 9th:</strong> All August content assignments are now available! Check out the new content sections in the sidebar to see your complete mission for capturing summer magic.
+            </p>
+            <p style={{ 
+              color: '#e8f5e8', 
+              margin: '0',
+              lineHeight: '1.6',
+              fontSize: '0.95rem'
+            }}>
+              Remember: Content must be collected in July and submitted by July 31st for August posting.
+            </p>
+          </div>
+          
+          <div style={{
             background: 'linear-gradient(135deg, #4a5568, #2d3748)',
             padding: '1.5rem',
             borderRadius: '0.8rem',
