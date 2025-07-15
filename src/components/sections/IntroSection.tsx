@@ -119,79 +119,41 @@ export function IntroSection() {
 
       {/* News & Updates Section */}
       <div className="news-updates-section">
-        <div className="news-header">
-          <div className="news-icon">📢</div>
-          <h2 className="news-title">News & Updates</h2>
-          <div className="news-subtitle">Stay informed with the latest tips and announcements</div>
+        <div className="news-feed-header">
+          <h2 className="news-feed-title">📰 Latest Updates</h2>
         </div>
         
-        <div className="news-grid">
-          <div style={{
-            background: 'linear-gradient(135deg, #28a745, #20c997)',
-            padding: '1.5rem',
-            borderRadius: '0.8rem',
-            border: '2px solid #17a2b8',
-            color: 'white',
-            marginBottom: '1rem'
-          }}>
-            <h3 style={{ 
-              color: 'white', 
-              margin: '0 0 1rem 0', 
-              fontSize: '1.2rem',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.5rem'
-            }}>
-              🎉 August Content is Now Live!
-            </h3>
-            <p style={{ 
-              color: '#e8f5e8', 
-              margin: '0 0 0.5rem 0',
-              lineHeight: '1.6'
-            }}>
-              <strong>Updated January 9th:</strong> All August content assignments are now available! Check out the new content sections in the sidebar to see your complete mission for capturing summer magic.
+        <div className="news-feed">
+          <article className="news-article featured">
+            <div className="news-meta">
+              <span className="news-badge breaking">🔥 BREAKING</span>
+              <time className="news-date">January 9, 2025</time>
+            </div>
+            <h3 className="news-headline">August Content is Now Live!</h3>
+            <p className="news-summary">
+              All August content assignments are now available! Check out the new content sections in the sidebar to see your complete mission for capturing summer magic.
             </p>
-            <p style={{ 
-              color: '#e8f5e8', 
-              margin: '0',
-              lineHeight: '1.6',
-              fontSize: '0.95rem'
-            }}>
-              Remember: Content must be collected in July and submitted by July 31st for August posting.
-            </p>
-          </div>
+            <div className="news-reminder">
+              <strong>⏰ Reminder:</strong> Content must be collected in July and submitted by July 31st for August posting.
+            </div>
+          </article>
           
-          <div style={{
-            background: 'linear-gradient(135deg, #4a5568, #2d3748)',
-            padding: '1.5rem',
-            borderRadius: '0.8rem',
-            border: '2px solid #718096',
-            color: 'white'
-          }}>
-            <h3 style={{ 
-              color: 'white', 
-              margin: '0 0 1rem 0', 
-              fontSize: '1.2rem',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.5rem'
-            }}>
-              📄 PDF Downloads Available
-            </h3>
-            <p style={{ 
-              color: '#e2e8f0', 
-              margin: '0',
-              lineHeight: '1.6'
-            }}>
-              <strong>Two ways to get PDFs:</strong><br/>
-              • <strong>Quick Guide:</strong> Download the condensed 3-page checklist above<br/>
-              • <strong>Individual Sections:</strong> Visit any content page and use the "Download This Section as PDF" button at the top for detailed instructions
+          <article className="news-article">
+            <div className="news-meta">
+              <span className="news-badge info">📄 INFO</span>
+              <time className="news-date">Available Now</time>
+            </div>
+            <h3 className="news-headline">PDF Downloads Available</h3>
+            <p className="news-summary">
+              Two convenient ways to get your content guides in PDF format for offline reference.
             </p>
-          </div>
-        </div>
-        
-        <div className="news-footer">
-          <p>💬 Have questions or suggestions? Reach out anytime!</p>
+            <div className="news-details">
+              <ul>
+                <li><strong>Quick Guide:</strong> Download the condensed 3-page checklist above</li>
+                <li><strong>Individual Sections:</strong> Visit any content page and use the "Download This Section as PDF" button</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </div>
       

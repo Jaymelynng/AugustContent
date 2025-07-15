@@ -1251,89 +1251,159 @@ h4 {
   line-height: 1.5;
 }
 
-/* News & Updates Section - Dark Theme */
+/* News Feed Section */
 .news-updates-section {
-  background: linear-gradient(135deg, #2d3748, #1a202c);
+  background: var(--white);
   border-radius: 1rem;
   margin: 2rem 0;
-  overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-  border: 2px solid #4a5568;
+  border: 2px solid var(--dropdown-bg);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.news-header {
-  background: linear-gradient(135deg, #4a5568, #2d3748);
-  padding: 2rem;
-  text-align: center;
-  color: white;
-  border-bottom: 2px solid #4a5568;
+.news-feed-header {
+  background: var(--sidebar-bg);
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--dropdown-bg);
 }
 
-.news-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.news-title {
-  font-size: 2rem;
+.news-feed-title {
+  font-size: 1.5rem;
   font-weight: 700;
-  margin: 0 0 0.5rem 0;
+  margin: 0;
   color: white !important;
+  text-align: center;
 }
 
-.news-subtitle {
-  font-size: 1.1rem;
-  opacity: 0.9;
-  color: white;
+.news-feed {
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
-.news-grid {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+.news-article {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--dropdown-bg);
+  transition: background-color 0.2s ease;
 }
 
-.news-item {
-  background: linear-gradient(135deg, #4a5568, #2d3748);
-  border-radius: 0.8rem;
-  border: 2px solid #718096;
-  color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
+.news-article:hover {
+  background: var(--main-bg);
 }
 
-.news-item h3 {
-  color: white !important;
-  margin: 0 0 1rem 0;
-  font-size: 1.2rem;
+.news-article:last-child {
+  border-bottom: none;
+}
+
+.news-article.featured {
+  background: linear-gradient(135deg, #e8f5e9, #f0f9f0);
+  border-left: 4px solid #28a745;
+}
+
+.news-meta {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.news-badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.news-badge.breaking {
+  background: #dc3545;
+  color: white;
+}
+
+.news-badge.info {
+  background: #17a2b8;
+  color: white;
+}
+
+.news-date {
+  font-size: 0.8rem;
+  color: var(--warm-gray);
+  font-weight: 500;
+}
+
+.news-headline {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 0.8rem 0;
+  color: var(--text-main) !important;
+  line-height: 1.3;
+}
+
+.news-summary {
+  color: var(--text-main) !important;
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.news-reminder {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  color: #856404 !important;
+}
+
+.news-details ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--text-main) !important;
+}
+
+.news-details li {
+  margin-bottom: 0.5rem;
+  color: var(--text-main) !important;
+  font-size: 0.9rem;
+}
+
+/* Scrollbar styling for news feed */
+.news-feed::-webkit-scrollbar {
+  width: 6px;
+}
+
+.news-feed::-webkit-scrollbar-track {
+  background: var(--main-bg);
+}
+
+.news-feed::-webkit-scrollbar-thumb {
+  background: var(--sidebar-bg);
+  border-radius: 3px;
+}
+
+.news-feed::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* Mobile responsive for news feed */
+@media (max-width: 768px) {
+  .news-feed {
+    max-height: 300px;
+  }
+  
+  .news-article {
+    padding: 1rem;
+  }
+  
+  .news-headline {
+    font-size: 1.1rem;
+  }
+  
+  .news-meta {
+    flex-direction: column;
+    align-items: flex-start;
   gap: 0.5rem;
 }
-
-.news-item p {
-  color: #e2e8f0 !important;
-  margin: 0 0 0.5rem 0;
-  line-height: 1.6;
-}
-
-.news-item p:last-child {
-  margin: 0;
-}
-
-.news-footer {
-  background: #1a202c;
-  padding: 1.5rem;
-  text-align: center;
-  border-top: 2px solid #4a5568;
-}
-
-.news-footer p {
-  margin: 0;
-  color: white !important;
-  font-weight: 600;
-  font-size: 1.1rem;
 }
 
 /* Edit Mode Styles */
