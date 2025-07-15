@@ -67,8 +67,6 @@ export function PlaygroundBossSection() {
                 <p><strong>Description:</strong> Film a student swinging across the rings on your ninja course.</p>
                 
                 <p><strong>Alternative:</strong> No rings? Film a student hanging on one side of a bar. Have them let go with one hand, look under their armpit, turn and grab the bar facing the other direction, then repeat on the other side. (Think: basic blind change drill)</p>
-                
-                <p><strong>FYI:</strong> This clip will freeze briefly to highlight the monkey bar connection — you don't need to edit this, just so you get the idea.</p>
               </div>
             </div>
           </div>
@@ -87,8 +85,6 @@ export function PlaygroundBossSection() {
                 <p><strong>Description:</strong> Film students climbing the rope with proper form.</p>
                 
                 <p><strong>Alternative:</strong> If no rope is available, film kids doing pull-ups, assisted pull-ups, or chin-up holds. Show multiple kids and angles.</p>
-                
-                <p><strong>FYI:</strong> This clip will freeze briefly to highlight the rock wall connection — you don't need to edit this, just so you get the idea.</p>
               </div>
             </div>
           </div>
@@ -107,8 +103,6 @@ export function PlaygroundBossSection() {
                 <p><strong>Description:</strong> Film students doing jumps, passes, or fun skills. Can be one child or a montage of several clips.</p>
                 
                 <p><strong>Alternative:</strong> If a full pass isn't possible, combine shorter clips of individual skills.</p>
-                
-                <p><strong>FYI:</strong> This clip will freeze briefly to highlight the trampoline park connection — you don't need to edit this, just so you get the idea.</p>
               </div>
             </div>
           </div>
