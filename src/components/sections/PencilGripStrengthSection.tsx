@@ -26,23 +26,29 @@ export function PencilGripStrengthSection() {
       </div>
 
       <div className="desc">
-        <h3>🎯 Post Visual:</h3>
+        <h3>🎯 Post Visual</h3>
         <p>
-          We're showing how grip strength from bar work sets the foundation for pencil control and neat handwriting. By visually linking overgrip, reverse grip, and mixed grip to hand and finger strength, we reinforce how gymnastics primes writing readiness.
+          In gymnastics, bar work isn't just about hanging tough — it's building the grip strength that directly translates to pencil holding, which improves handwriting. We're demonstrating how grip strength from bars improves by visually linking overgrip, reverse grip, and mixed grip.
         </p>
       </div>
 
       <div className="requirements">
-        <h3>📌 Visual Capture Instructions</h3>
-        <p><strong>Photo Count:</strong> Take 7 total images in square (1:1) format</p>
-        <p><strong>Grip Coverage:</strong> For each grip (Overgrip, Reverse Grip, Mixed Grip):</p>
+        <h3>📸 Grip Photo Instructions</h3>
+        <p><strong>Total Photos:</strong> 7 square (1:1) images</p>
+        <p><strong>For Each Grip (Overgrip, Reverse Grip, Mixed Grip):</strong></p>
         <ul>
-          <li>📷 <strong>Wide Shot:</strong> Full or upper body hanging from the bar</li>
-          <li>✋ <strong>Close-Up:</strong> Tight crop on hands and fingers gripping the bar</li>
+          <li><strong>1 wide shot</strong> — full or upper body hanging from the bar</li>
+          <li><strong>1 close-up</strong> — hands and fingers gripping the bar</li>
         </ul>
-        <p><strong>Lighting & Angles:</strong> Use clean, well-lit shots to emphasize finger placement and hand activation</p>
-        <p><strong>Bonus Photo:</strong> One vibrant group/class photo with kids hanging together — any mix of grips works</p>
-        <p>🌟 Aim for energy, effort, and visible joy</p>
+        <p><strong>Bonus:</strong></p>
+        <ul>
+          <li><strong>1 fun group photo</strong> of the full class hanging from the bar (any grips)</li>
+        </ul>
+        <p><strong>Tips:</strong></p>
+        <ul>
+          <li>Use bright, clean lighting</li>
+          <li>Keep angles consistent and clear</li>
+        </ul>
       </div>
 
       <UploadChecklist items={checklistItems} section="pencil-grip-strength" />
@@ -53,37 +59,38 @@ export function PencilGripStrengthSection() {
         <div className="upload-details">
           <div className="upload-item">
             <h4>Overgrip – Full Shot</h4>
-            <p>Full shot of kiddo hanging in standard overgrip. Big smile! Think of creative angles.</p>
+            <p>Student hanging in standard overgrip</p>
           </div>
 
           <div className="upload-item">
             <h4>Overgrip – Close-Up</h4>
-            <p>Zoom in on the hands to show the grip.</p>
+            <p>Tight shot of hands showing the grip</p>
           </div>
 
           <div className="upload-item">
             <h4>Reverse Grip – Full Shot</h4>
-            <p>Full shot of kiddo hanging in reverse grip (palms facing them). Big smile! Think of creative angles.</p>
+            <p>Student hanging in reverse grip</p>
           </div>
 
           <div className="upload-item">
             <h4>Reverse Grip – Close-Up</h4>
-            <p>Zoom in on the hands to show the grip.</p>
+            <p>Tight shot of hands showing the grip</p>
           </div>
 
           <div className="upload-item">
             <h4>Mixed Grip – Full Shot</h4>
-            <p>Full shot of kiddo hanging in mixed grip (one over, one under). Big smile! Think of creative angles.</p>
+            <p>Student hanging in mixed grip (one over, one under)</p>
           </div>
 
           <div className="upload-item">
             <h4>Mixed Grip – Close-Up</h4>
-            <p>Zoom in on the hands to show the contrast in grip.</p>
+            <p>Tight shot of hands showing the grip</p>
           </div>
 
           <div className="upload-item">
-            <h4>Group/Class Hanging</h4>
-            <p>Multiple kids hanging from bars together — mix of grips is fine. Focus on fun, teamwork, and effort.</p>
+            <h4>Group Hanging – Full Class</h4>
+            <p>A group/ full class hanging</p>
+            <p>➝ Any grip combo is fine — focus on fun and effort</p>
           </div>
         </div>
       </div>
