@@ -109,6 +109,19 @@ const defaultAugustContent: ContentMonth = {
         { id: 'triumph-belonging', label: 'Photo 5: The Triumph & Belonging', type: 'photo' },
         { id: 'final-salute', label: 'Photo 6: The Final Salute (Centerpiece)', type: 'photo' }
       ]
+    },
+    {
+      id: 'power-starts-here',
+      order: 5,
+      title: 'Power Starts Here',
+      type: 'series',
+      description: 'Create a 2-photo + 1-video comparison showing the secret weapon behind a powerful roundoff: the mountain climber setup.',
+      requirements: ['Same filming angle for all content', 'Clean, raw footage for editing', 'Clear correct vs incorrect positioning', 'Consistent camera position'],
+      items: [
+        { id: 'correct-mountain-climber', label: 'Photo 1: CORRECT Mountain Climber', type: 'photo' },
+        { id: 'incorrect-mountain-climber', label: 'Photo 2: INCORRECT Mountain Climber', type: 'photo' },
+        { id: 'roundoff-video', label: 'Video 1: The Roundoff', type: 'video' }
+      ]
     }
   ]
 };
