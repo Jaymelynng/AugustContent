@@ -97,7 +97,7 @@ const defaultAugustContent: ContentMonth = {
     {
       id: 'finding-their-voice',
       order: 4,
-      title: 'POST #3: Finding Their Voice',
+      title: 'You don\'t need to be the loudest kid in the gym to have the strongest voice.',
       type: 'photo',
       description: 'Create a 6-photo collage showing how a quieter child finds their strength and sense of belonging at the gym.',
       requirements: ['Square (1:1) aspect ratio', 'Consistent, clean lighting', 'Post-ready images', 'Story progression from quiet to confident'],

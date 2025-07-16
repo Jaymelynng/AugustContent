@@ -16,7 +16,7 @@ export function FindingTheirVoiceSection() {
   return (
     <div>
       <h1>
-        POST #3: Finding Their Voice
+        You don't need to be the loudest kid in the gym to have the strongest voice.
         <ContentBadge type="photo" label="PHOTO COLLAGE | 6 PHOTOS" />
       </h1>
 
