@@ -49,7 +49,7 @@ export function BackToSchoolBalanceSection() {
       <UploadChecklist items={checklistItems} section="back-to-school-balance" />
 
       <div className="content-section">
-        <h3>🎥 UPLOAD THESE 4 PHOTOS (With Storylines)</h3>
+        <h3>🎥 UPLOAD THESE 4 PHOTOS:</h3>
 
         <div className="upload-details">
           <div className="upload-item">
