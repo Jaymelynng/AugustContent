@@ -15,6 +15,7 @@ const navigationItems = [
   { id: 'pencil-grip-strength', label: 'Pencil Grip Strength', icon: Camera, category: 'content' },
   { id: 'playground-boss', label: 'Become A Boss On The Playground', icon: Video, category: 'content' },
   { id: 'bounce-back-power', label: 'Bounce-Back Power', icon: Video, category: 'content' },
+  { id: 'finding-their-voice', label: 'Finding Their Voice', icon: Camera, category: 'content' },
   
   // Guides
   { id: 'guidelines', label: 'Guidelines', icon: FileText, category: 'guides' },

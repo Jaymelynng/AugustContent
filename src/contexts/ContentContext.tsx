@@ -94,6 +94,22 @@ const defaultAugustContent: ContentMonth = {
         { id: 'praise-recovery', label: 'Video 3: The Praise for Recovery', type: 'video' }
       ]
     }
+    },
+    {
+      id: 'finding-their-voice',
+      order: 4,
+      title: 'POST #3: Finding Their Voice',
+      type: 'photo',
+      description: 'Create a 6-photo collage showing how a quieter child finds their strength and sense of belonging at the gym.',
+      requirements: ['Square (1:1) aspect ratio', 'Consistent, clean lighting', 'Post-ready images', 'Story progression from quiet to confident'],
+      items: [
+        { id: 'quiet-start', label: 'Photo 1: The Quiet Start', type: 'photo' },
+        { id: 'gentle-invitation', label: 'Photo 2: The Gentle Invitation', type: 'photo' },
+        { id: 'first-tries', label: 'Photo 3: First Tries', type: 'photo' },
+        { id: 'growing-confidence', label: 'Photo 4: The Growing Confidence', type: 'photo' },
+        { id: 'triumph-belonging', label: 'Photo 5: The Triumph & Belonging', type: 'photo' },
+        { id: 'final-salute', label: 'Photo 6: The Final Salute (Centerpiece)', type: 'photo' }
+      ]
   ]
 };
 
