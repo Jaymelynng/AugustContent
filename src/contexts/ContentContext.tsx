@@ -93,7 +93,6 @@ const defaultAugustContent: ContentMonth = {
         { id: 'refocus-moment', label: 'Video 2: The Re-Focus Moment', type: 'video' },
         { id: 'praise-recovery', label: 'Video 3: The Praise for Recovery', type: 'video' }
       ]
-    }
     },
     {
       id: 'finding-their-voice',
@@ -110,6 +109,7 @@ const defaultAugustContent: ContentMonth = {
         { id: 'triumph-belonging', label: 'Photo 5: The Triumph & Belonging', type: 'photo' },
         { id: 'final-salute', label: 'Photo 6: The Final Salute (Centerpiece)', type: 'photo' }
       ]
+    }
   ]
 };
 
