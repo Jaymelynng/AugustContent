@@ -4,6 +4,7 @@ import { IntroSection } from './sections/IntroSection';
 import { BackToSchoolBalanceSection } from './sections/BackToSchoolBalanceSection';
 import { PencilGripStrengthSection } from './sections/PencilGripStrengthSection';
 import { PlaygroundBossSection } from './sections/PlaygroundBossSection';
+import { BounceBackPowerSection } from './sections/BounceBackPowerSection';
 import { GuidelinesSection } from './sections/GuidelinesSection';
 import { TechnicalSection } from './sections/TechnicalSection';
 import { SubmissionSection } from './sections/SubmissionSection';
@@ -23,6 +24,8 @@ export function MainContent({ activeSection }: MainContentProps) {
         return <PencilGripStrengthSection />;
       case 'playground-boss':
         return <PlaygroundBossSection />;
+      case 'bounce-back-power':
+        return <BounceBackPowerSection />;
       case 'guidelines':
         return <GuidelinesSection />;
       case 'technical':
@@ -40,6 +43,7 @@ export function MainContent({ activeSection }: MainContentProps) {
       case 'back-to-school-balance': return 'Back-to-School-Balance-Guide';
       case 'pencil-grip-strength': return 'Pencil-Grip-Strength-Guide';
       case 'playground-boss': return 'Playground-Boss-Guide';
+      case 'bounce-back-power': return 'Bounce-Back-Power-Guide';
       case 'guidelines': return 'Content-Guidelines';
       case 'technical': return 'Technical-Standards';
       case 'submission': return 'Submission-Process';

@@ -80,6 +80,19 @@ const defaultAugustContent: ContentMonth = {
         { id: 'mixed-closeup', label: 'Mixed Grip – Close-Up', type: 'photo' },
         { id: 'group-hanging', label: 'Group/Class Hanging', type: 'photo' }
       ]
+    },
+    {
+      id: 'bounce-back-power',
+      order: 3,
+      title: 'POST #3: Bounce-Back Power',
+      type: 'video',
+      description: 'Create a 3-clip video reel showing how gymnastics builds resilience through wobbles, recovery, and coach support.',
+      requirements: ['10-15 seconds total', 'Authentic moments during practice', 'Clear recovery visible', 'Supportive coaching interaction'],
+      items: [
+        { id: 'wobble-save', label: 'Video 1: The Wobble & Save', type: 'video' },
+        { id: 'refocus-moment', label: 'Video 2: The Re-Focus Moment', type: 'video' },
+        { id: 'praise-recovery', label: 'Video 3: The Praise for Recovery', type: 'video' }
+      ]
     }
   ]
 };
