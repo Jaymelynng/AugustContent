@@ -127,7 +127,7 @@ export function IntroSection() {
           <article className="news-article featured">
             <div className="news-meta">
               <span className="news-badge breaking">🔥 BREAKING</span>
-              <time className="news-date">January 9, 2025</time>
+              <time className="news-date">July 9, 2025</time>
             </div>
             <h3 className="news-headline">August Content is Now Live!</h3>
             <p className="news-summary">
