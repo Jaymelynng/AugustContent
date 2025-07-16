@@ -101,10 +101,11 @@ export function FindingTheirVoiceSection() {
           <div className="upload-item">
             <h4>Photo 5: The Triumph & Belonging</h4>
             <div className="content-type-badge photo-badge">🏆 The Big Payoff</div>
-            <p><strong>What to capture:</strong> The big payoff moment.</p>
-            <p><strong>Ideas:</strong></p>
+            <p><strong>What to capture:</strong> A student successfully nailing a skill while the entire class cheers for them in the background.</p>
+            <p><strong>Shot Suggestion:</strong></p>
             <ul>
-              <li>Nailing a skill while the rest of the class cheers in the background</li>
+              <li>A great angle for this is a side view of the beam. This allows you to capture the student on one side of the frame and the entire cheering class on the other.</li>
+              <li>Ultimately, the goal is to get the best one—so capture the most powerful version of this celebration moment you can find!</li>
             </ul>
           </div>
 
