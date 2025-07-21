@@ -141,7 +141,6 @@ const defaultAugustContent: ContentMonth = {
         { id: 'standing-backbend-vertical', label: 'Clip 5: Standing Backbend to Vertical', type: 'video' },
         { id: 'independent-back-walkover', label: 'Clip 6: Independent Back Walkover', type: 'video' }
       ]
-    }
     },
     {
       id: 'high-five-that-matters',
@@ -161,6 +160,7 @@ const defaultAugustContent: ContentMonth = {
         { id: 'celebration-clip-2', label: 'Celebration Clip #2', type: 'video' },
         { id: 'celebration-clip-3', label: 'Celebration Clip #3', type: 'video' }
       ]
+    }
   ]
 };
 
