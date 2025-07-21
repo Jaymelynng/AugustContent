@@ -122,6 +122,25 @@ const defaultAugustContent: ContentMonth = {
         { id: 'incorrect-mountain-climber', label: 'Photo 2: INCORRECT Mountain Climber', type: 'photo' },
         { id: 'roundoff-video', label: 'Video 1: The Roundoff', type: 'video' }
       ]
+    },
+    {
+      id: 'progression-pyramid',
+      order: 6,
+      title: 'The Progression Pyramid Reel',
+      type: 'video',
+      description: 'Create a cinematic reel showcasing the methodical coaching approach by breaking down the back walkover into detailed progressions.',
+      requirements: ['Cinematic reel format', 'Step-by-step progression', 'Expert coaching demonstration', 'Safe, methodical approach'],
+      items: [
+        { id: 'tabletop-shape', label: 'Clip 1: Tabletop Shape', type: 'video' },
+        { id: 'elevated-bridge-pushup', label: 'Clip 2A: The Elevated Bridge (Push-up)', type: 'video' },
+        { id: 'elevated-bridge-rockers', label: 'Clip 2B: The Elevated Bridge (Rockers)', type: 'video' },
+        { id: 'knee-bridge-wall', label: 'Clip 3A: The Knee Bridge (Wall Prep)', type: 'video' },
+        { id: 'knee-bridge-full', label: 'Clip 3B: The Knee Bridge (Full Skill)', type: 'video' },
+        { id: 'cheese-mat-backbend', label: 'Clip 4A: Cheese Mat Backbend (Shape)', type: 'video' },
+        { id: 'cheese-mat-rockers', label: 'Clip 4B: Cheese Mat Backbend (Rockers)', type: 'video' },
+        { id: 'standing-backbend-vertical', label: 'Clip 5: Standing Backbend to Vertical', type: 'video' },
+        { id: 'independent-back-walkover', label: 'Clip 6: Independent Back Walkover', type: 'video' }
+      ]
     }
   ]
 };
