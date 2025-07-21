@@ -8,6 +8,7 @@ import { BounceBackPowerSection } from './sections/BounceBackPowerSection';
 import { FindingTheirVoiceSection } from './sections/FindingTheirVoiceSection';
 import { PowerStartsHereSection } from './sections/PowerStartsHereSection';
 import { ProgressionPyramidSection } from './sections/ProgressionPyramidSection';
+import { HighFiveThatMattersSection } from './sections/HighFiveThatMattersSection';
 import { GuidelinesSection } from './sections/GuidelinesSection';
 import { TechnicalSection } from './sections/TechnicalSection';
 import { SubmissionSection } from './sections/SubmissionSection';
@@ -35,6 +36,8 @@ export function MainContent({ activeSection }: MainContentProps) {
         return <PowerStartsHereSection />;
       case 'progression-pyramid':
         return <ProgressionPyramidSection />;
+      case 'high-five-that-matters':
+        return <HighFiveThatMattersSection />;
       case 'guidelines':
         return <GuidelinesSection />;
       case 'technical':
@@ -56,6 +59,7 @@ export function MainContent({ activeSection }: MainContentProps) {
       case 'finding-their-voice': return 'Finding-Their-Voice-Guide';
       case 'power-starts-here': return 'Power-Starts-Here-Guide';
       case 'progression-pyramid': return 'Progression-Pyramid-Reel-Guide';
+      case 'high-five-that-matters': return 'High-Five-That-Matters-Guide';
       case 'guidelines': return 'Content-Guidelines';
       case 'technical': return 'Technical-Standards';
       case 'submission': return 'Submission-Process';

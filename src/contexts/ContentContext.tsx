@@ -142,6 +142,25 @@ const defaultAugustContent: ContentMonth = {
         { id: 'independent-back-walkover', label: 'Clip 6: Independent Back Walkover', type: 'video' }
       ]
     }
+    },
+    {
+      id: 'high-five-that-matters',
+      order: 7,
+      title: 'The High-Five That Matters',
+      type: 'video',
+      description: 'Create a fast-paced montage reel showcasing our coaching philosophy through nine distinct "skill-and-praise" moments.',
+      requirements: ['Dynamic video reel format', 'Montage style', 'Nine separate short clips', 'Effort, encouragement, and celebration themes'],
+      items: [
+        { id: 'effort-clip-1', label: 'Effort Clip #1', type: 'video' },
+        { id: 'effort-clip-2', label: 'Effort Clip #2', type: 'video' },
+        { id: 'effort-clip-3', label: 'Effort Clip #3', type: 'video' },
+        { id: 'encouragement-clip-1', label: 'Encouragement Clip #1', type: 'video' },
+        { id: 'encouragement-clip-2', label: 'Encouragement Clip #2', type: 'video' },
+        { id: 'encouragement-clip-3', label: 'Encouragement Clip #3', type: 'video' },
+        { id: 'celebration-clip-1', label: 'Celebration Clip #1', type: 'video' },
+        { id: 'celebration-clip-2', label: 'Celebration Clip #2', type: 'video' },
+        { id: 'celebration-clip-3', label: 'Celebration Clip #3', type: 'video' }
+      ]
   ]
 };
 

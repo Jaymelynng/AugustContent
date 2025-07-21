@@ -18,6 +18,7 @@ const navigationItems = [
   { id: 'finding-their-voice', label: 'Finding Their Voice', icon: Camera, category: 'content' },
   { id: 'power-starts-here', label: 'Power Starts Here', icon: Award, category: 'content' },
   { id: 'progression-pyramid', label: 'The Progression Pyramid Reel', icon: Video, category: 'content' },
+  { id: 'high-five-that-matters', label: 'The High-Five That Matters', icon: Video, category: 'content' },
   
   // Guides
   { id: 'guidelines', label: 'Guidelines', icon: FileText, category: 'guides' },
