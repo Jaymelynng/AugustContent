@@ -43,6 +43,7 @@ export function SixShapesSection() {
       <div className="requirements">
         <h3>🔥 Jayme's Notes (Strategy & Copy)</h3>
         <p><strong>Data Point:</strong> Comparison-style carousels are highly effective. They create "Aha!" moments that increase post saves and boost educational engagement.</p>
+        <p><strong>Data Point:</strong> Comparison-style - goal is to create "Aha!" moments that increase interest and boost educational engagement.</p>
         
         <p><strong>Search Data / Google Trends:</strong></p>
         <ul>
