@@ -161,6 +161,22 @@ const defaultAugustContent: ContentMonth = {
         { id: 'celebration-clip-3', label: 'Celebration Clip #3', type: 'video' }
       ]
     }
+    },
+    {
+      id: 'six-shapes',
+      order: 8,
+      title: 'THE 6 SHAPES THAT BUILD EVERY GYMNAST',
+      type: 'photo',
+      description: 'Create a 6-photo carousel showcasing the foundational body shapes that form the basis of every gymnastics skill.',
+      requirements: ['Clean, technically strong photos', 'Side-profile shots for hollow and arch', 'Side view only for straddle (75-90 degrees)', 'Proper technique demonstration'],
+      items: [
+        { id: 'straight-body', label: 'Slide 1: Straight Body', type: 'photo' },
+        { id: 'hollow-body', label: 'Slide 2: Hollow Body', type: 'photo' },
+        { id: 'arch-position', label: 'Slide 3: Arch Position', type: 'photo' },
+        { id: 'tuck-shape', label: 'Slide 4: Tuck Shape', type: 'photo' },
+        { id: 'pike-shape', label: 'Slide 5: Pike Shape', type: 'photo' },
+        { id: 'straddle-shape', label: 'Slide 6: Straddle Shape', type: 'photo' }
+      ]
   ]
 };
 
