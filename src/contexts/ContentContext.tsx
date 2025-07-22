@@ -160,7 +160,6 @@ const defaultAugustContent: ContentMonth = {
         { id: 'celebration-clip-2', label: 'Celebration Clip #2', type: 'video' },
         { id: 'celebration-clip-3', label: 'Celebration Clip #3', type: 'video' }
       ]
-    }
     },
     {
       id: 'six-shapes',
@@ -177,6 +176,7 @@ const defaultAugustContent: ContentMonth = {
         { id: 'pike-shape', label: 'Slide 5: Pike Shape', type: 'photo' },
         { id: 'straddle-shape', label: 'Slide 6: Straddle Shape', type: 'photo' }
       ]
+    }
   ]
 };
 
