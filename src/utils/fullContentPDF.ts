@@ -60,14 +60,15 @@ export const generateFullContentPDF = async () => {
   
   // Table of Contents
   addText('📋 TABLE OF CONTENTS', 16, true, '#8B4A4A');
-  addText('1. 5 Epic Ways to Beat Summer Boredom - 📹 REEL | 5 VIDEOS', 10);
-  addText('2. 4th of July Fireworks - 📸 PHOTO | 1 PHOTO', 10);
-  addText('3. Handstand Contest!!! - 📹 REEL | 1 VIDEO', 10);
-  addText('4. The Secret to Confidence That Lasts Beyond Summer - 📸 PHOTO | 1 PHOTO', 10);
-  addText('5. "Can You Keep Up?" – Coach vs. Kid Race - 📹 REEL | 1 VIDEO', 10);
-  addText('6. Riddle Week – Forward Roll Series - 📸 PHOTOS | 4 PHOTOS', 10);
-  addText('7. "Not Sure What to Expect?" – We\'ll Show You - FREE TRIAL - 📸 PHOTOS | 3 PHOTOS', 10);
-  addText('8. Balance Reel - 📹 REEL | 3 VIDEOS', 10);
+  addText('1. Back to School Balance - 📸 PHOTO CAROUSEL | 4 PHOTOS', 10);
+  addText('2. Pencil Grip Strength from Bars - 📸 PHOTO COLLAGE | 7 PHOTOS', 10);
+  addText('3. Bounce-Back Power - 📹 VIDEO REEL | 3 CLIPS', 10);
+  addText('4. Become A Boss On The Playground - 📹 VIDEO REEL | 3 VIDEOS', 10);
+  addText('5. Finding Their Voice - 📸 PHOTO COLLAGE | 6 PHOTOS', 10);
+  addText('6. Power Starts Here - 📸📹 PHOTO + VIDEO | 2 PHOTOS, 1 VIDEO', 10);
+  addText('7. The Progression Pyramid Reel - 📹 CINEMATIC REEL | 6 CLIPS', 10);
+  addText('8. The High-Five That Matters - 📹 DYNAMIC VIDEO REEL | 9 CLIPS', 10);
+  addText('9. The 6 Shapes That Build Every Gymnast - 📸 PHOTO CAROUSEL | 6 PHOTOS', 10);
   
   addSectionBreak();
   
@@ -89,173 +90,196 @@ export const generateFullContentPDF = async () => {
   addText('📱 CONTENT TASKS', 18, true, '#8B4A4A');
   addSectionBreak();
   
-  // Task 1: Beat Boredom
-  addText('1. 5 Epic Ways to Beat Summer Boredom', 14, true, '#8B4A4A');
-  addText('📹 REEL | 5 VIDEOS | 15-20 seconds each', 11, true);
+  // Task 1: Back to School Balance
+  addText('1. Back to School Balance', 14, true, '#8B4A4A');
+  addText('📸 PHOTO CAROUSEL | 4 PHOTOS', 11, true);
   
   addText('🎯 Post Visual:', 11, true);
-  addText('Five clips that visually show the variety and value of summer camp, highlighting fun for kids and demonstrating value to parents. Think energy, friendship, new skills, and adventure.', 10);
+  addText('Four square photos that showcase how beam balance builds confidence and directly translates to school readiness. Kids walking uphill on beams with books balanced on their heads create a powerful metaphor.', 10);
   
   addText('📌 Content Notes:', 11, true);
-  addText('• Record 5 clips total', 10);
-  addText('• Each should be 15–20 seconds long', 10);
-  addText('• Upload final, trimmed clips—each should show exactly what you want used', 10);
-  addText('• Multiple angles/effects encouraged—edit into single 15–20 second clip before uploading', 10);
-  addText('• Submit post-ready content requiring no further trimming', 10);
-  
-  addText('🎥 UPLOAD THESE 5 VIDEOS:', 11, true);
-  addText('📹 Video 1: Group/Team Activity – High-Energy and Physical', 10, true);
-  addText('• Kids feel: excited, energized—this place looks like so much fun!', 10);
-  addText('• Parents value: teamwork, physical activity', 10);
-  
-  addText('📹 Video 2: Learning & Progress', 10, true);
-  addText('• Kids feel: eager to show off a new skill', 10);
-  addText('• Parents value: personal growth, progress', 10);
-  
-  addText('📹 Video 3: Friendship & Connection', 10, true);
-  addText('• Kids feel: excited to have fun with friends or make new ones', 10);
-  addText('• Parents value: social growth, new experiences, lasting memories', 10);
-  
-  addText('📹 Video 4: Gym Personality & Playfulness', 10, true);
-  addText('• Kids feel: how fun the gym is and how cool the coaches are', 10);
-  addText('• Parents value: playful, positive role models and healthy environment', 10);
-  
-  addText('📹 Video 5: Happy & Worn Out', 10, true);
-  addText('• Kids feel: fulfilled, can\'t wait to come back tomorrow', 10);
-  addText('• Parents value: a full, active, happy day', 10);
-  
-  addSectionBreak();
-  
-  // Task 2: 4th of July
-  addText('2. 4th of July Fireworks', 14, true, '#8B4A4A');
-  addText('📸 PHOTO | 1 PHOTO', 11, true);
-  
-  addText('🎯 Post Visual:', 11, true);
-  addText('Kids caught mid-action, like jumping or cheering, at the peak moment—think fireworks.', 10);
-  
-  addText('📌 Content Notes:', 11, true);
-  addText('Focus on capturing one clear, bright image that highlights excitement at its peak. Ensure the photo is well-lit and crisp—no blur.', 10);
-  
-  addText('📷 UPLOAD THIS 1 PHOTO:', 11, true);
-  addText('📸 One group action shot', 10, true);
-  addText('Example: Throwing pit cubes, jumping into pit', 10);
-  
-  addSectionBreak();
-  
-  // Task 3: Handstand Contest
-  addText('3. Handstand Contest!!!', 14, true, '#8B4A4A');
-  addText('📹 REEL | 1 VIDEO | 20-30 seconds', 11, true);
-  
-  addText('🎯 Post Visual:', 11, true);
-  addText('Organize a classic handstand contest. Can be walking or no walking! Include kids of any and all levels in your gym—the more mix, the better! Kids, coaches, or both. Get creative with locations: beam handstands, vault table, or any part of the gym. Catch the fun energy and team spirit.', 10);
-  
-  addText('📌 Content Notes:', 11, true);
-  addText('• Submit one final video, 20–30 seconds total, from start to finish', 10);
-  addText('• Multiple clips/angles encouraged—put together before uploading', 10);
-  addText('• Should play as one smooth video', 10);
-  
-  addText('🎥 UPLOAD THIS 1 VIDEO:', 11, true);
-  addText('📹 One 20–30 second continuous video capturing the full contest', 10, true);
-  
-  addSectionBreak();
-  
-  // Task 4: Confidence
-  addText('4. The Secret to Confidence That Lasts Beyond Summer', 14, true, '#8B4A4A');
-  addText('📸 PHOTO | 1 PHOTO', 11, true);
-  
-  addText('🎯 Post Visual:', 11, true);
-  addText('Core Visual: A pure "I-did-it!" face!', 10);
-  
-  addText('📌 Content Notes:', 11, true);
-  addText('Choose one powerful, clear image that radiates confidence. It should be that photo that instantly makes you smile. Highlight the child\'s face and emotion in action.', 10);
-  
-  addText('📷 UPLOAD THIS 1 PHOTO:', 11, true);
-  addText('📸 One incredible photo of a child achieving something big (rope climb, ninja course, new skill, etc.)', 10, true);
-  
-  addSectionBreak();
-  
-  // Task 5: Coach vs Kid Race
-  addText('5. "Can You Keep Up?" – Coach vs. Kid Race', 14, true, '#8B4A4A');
-  addText('📹 REEL | 1 VIDEO', 11, true);
-  
-  addText('🎯 Post Visual:', 11, true);
-  addText('Coaches participating in obstacle course/race activities with kids—showing coaches actually doing camp games and challenges alongside campers.', 10);
-  
-  addText('📌 Content Notes:', 11, true);
-  addText('Film one continuous race from start ("Ready, Set, Go!") to final reactions. Capture both action and fun! Focus on the playful interaction between coaches and kids. Can be one or multiple shot angles.', 10);
-  
-  addText('🎥 UPLOAD THIS 1 VIDEO:', 11, true);
-  addText('📹 One full video: Start with "Ready, Set, Go!" → End after reactions', 10, true);
-  
-  addSectionBreak();
-  
-  // Task 6: Riddle Week
-  addText('6. Riddle Week – Forward Roll Series', 14, true, '#8B4A4A');
-  addText('📸 PHOTOS | 4 PHOTOS', 11, true);
-  
-  addText('🎯 Post Visual:', 11, true);
-  addText('Preschoolers in motion—showing curiosity, movement, and joyful progress through a forward roll.', 10);
-  
-  addText('📌 Content Notes:', 11, true);
-  addText('Use one child to show all 4 steps clearly. You should clearly see each phase of the roll—full shot, clear, no blur concept.', 10);
+  addText('• Take 4 photos in square (1:1) aspect ratio', 10);
+  addText('• Prioritize clean lighting and visible kid expressions', 10);
+  addText('• Make posture and balance visually impressive', 10);
+  addText('• Submit post-ready images', 10);
   
   addText('📷 UPLOAD THESE 4 PHOTOS:', 11, true);
-  addText('📸 4 photos showing each stage of a forward roll:', 10, true);
-  addText('1. 📸 Photo 1: Hands Up High', 10);
-  addText('2. 📸 Photo 2: Hands Down Low', 10);
-  addText('3. 📸 Photo 3: Look at Your Belly', 10);
-  addText('4. 📸 Photo 4: Over You Go – TADAA!', 10);
+  addText('📸 Photo 1: Uphill Beam Walk with Props – Multitasking & Sensory Control', 10, true);
+  addText('📸 Photo 2: One-Foot Beam Balance – "Steady Focus"', 10, true);
+  addText('📸 Photo 3: Beam Game Action – "Problem-Solving Play"', 10, true);
+  addText('📸 Photo 4: Final Balance Pose – "I\'m Ready" Moment', 10, true);
   
   addSectionBreak();
   
-  // Task 7: Free Trial
-  addText('7. "Not Sure What to Expect?" – We\'ll Show You - FREE TRIAL', 14, true, '#8B4A4A');
-  addText('📸 PHOTOS | 3 PHOTOS', 11, true);
+  // Task 2: Pencil Grip Strength
+  addText('2. Pencil Grip Strength from Bars', 14, true, '#8B4A4A');
+  addText('📸 PHOTO COLLAGE | 7 PHOTOS', 11, true);
   
   addText('🎯 Post Visual:', 11, true);
-  addText('A high-energy class in action—coaches involved, kids smiling, and real learning happening.', 10);
+  addText('Demonstrate how grip strength from bar work sets the foundation for pencil control and neat handwriting through various grip types.', 10);
   
   addText('📌 Content Notes:', 11, true);
-  addText('Grab those perfect moments where the energy and fun are obvious—think high-fives, big smiles, and kids in the middle of the action. No stiff poses, just real, awesome moments. Goal is to encourage people to try free trial classes and show off your gym equipment and fun atmosphere.', 10);
+  addText('• Format: Square (1:1) aspect ratio for all 7 photos', 10);
+  addText('• Lighting: Clean, well-lit shots emphasizing finger placement', 10);
+  addText('• Coverage: Wide shots and close-ups for each grip type', 10);
   
-  addText('📷 UPLOAD THESE 3 PHOTOS:', 11, true);
-  addText('📸 Photo 1: A group action shot of a class in action—kids playing together, smiling, and having a blast.', 10);
-  addText('📸 Photo 2: A coach connecting with kids in class—think high-fives, spotting a skill, or a teaching moment.', 10);
-  addText('📸 Photo 3: Anything that makes you smile and highlights your gym\'s personality—use equipment, displays, or decorations that show off what makes your gym unique.', 10);
+  addText('📷 UPLOAD THESE 7 PHOTOS:', 11, true);
+  addText('1. Overgrip – Full Shot', 10);
+  addText('2. Overgrip – Close-Up', 10);
+  addText('3. Reverse Grip – Full Shot', 10);
+  addText('4. Reverse Grip – Close-Up', 10);
+  addText('5. Mixed Grip – Full Shot', 10);
+  addText('6. Mixed Grip – Close-Up', 10);
+  addText('7. Group/Class Hanging', 10);
   
   addSectionBreak();
   
-  // Task 8: Balance Reel
-  addText('8. Balance Reel', 14, true, '#8B4A4A');
-  addText('📹 REEL | 3 VIDEOS', 11, true);
+  // Task 3: Bounce-Back Power
+  addText('3. Bounce-Back Power', 14, true, '#8B4A4A');
+  addText('📹 VIDEO REEL | 3 CLIPS', 11, true);
   
   addText('🎯 Post Visual:', 11, true);
-  addText('Show off balance in a fun, creative way using three short clips. Capture movement with control, cool angles, and a confident finish—something that feels interactive and visually interesting. Give parents a view they don\'t usually get to see.', 10);
+  addText('Capture the powerful, teachable moment after a mistake. Show how gymnastics builds resilience through wobbles, recovery, and coach support.', 10);
   
   addText('📌 Content Notes:', 11, true);
-  addText('Use smooth zoom transitions for dramatic effect. Capture different angles for variety. Focus on precision and control in movements.', 10);
+  addText('• Capture three separate, short video clips', 10);
+  addText('• Goal is to capture authentic moments during practice', 10);
+  addText('• Final video length: Approximately 10–15 seconds', 10);
   
   addText('🎥 UPLOAD THESE 3 VIDEOS:', 11, true);
+  addText('📹 Video 1: The Wobble & Save', 10, true);
+  addText('📹 Video 2: The Re-Focus Moment', 10, true);
+  addText('📹 Video 3: The Praise for Recovery', 10, true);
   
-  addText('📹 Video 1: Walking on Beam', 10, true);
-  addText('🎬 Scene 1: Walking on Beam', 10, true);
-  addText('Start with a straight-down-the-beam view. Gymnast walks slowly toward the camera. This is perspective from the end of the beam so they see what doing skills on a 4 inch beam really looks like.', 10);
-  addText('Camera: Start wide → zoom in closer towards their feet as they balance', 10);
+  addSectionBreak();
   
-  addText('📹 Video 2: Skill – Zoom to Movement', 10, true);
-  addText('🎬 Scene 2: Skill – Zoom to Movement', 10, true);
-  addText('Switch to a side view of the gymnast on beam. Film one dynamic beam skill of the athlete\'s choice—anything that shows action and control.', 10);
-  addText('Camera: Begin wide → zoom in on the movement to highlight precision.', 10);
+  // Task 4: Playground Boss
+  addText('4. Become A Boss On The Playground', 14, true, '#8B4A4A');
+  addText('📹 VIDEO REEL | 3 VIDEOS', 11, true);
   
-  addText('📹 Video 3: Dismount – Zoom to Landing', 10, true);
-  addText('🎬 Scene 3: Dismount – Zoom to Landing', 10, true);
-  addText('Film from a new angle (diagonal or front corner preferred). Show the entire dismount, from prep to stick + salute.', 10);
-  addText('Camera: Full shot → zoom in on the landing or arms lifting in salute.', 10);
+  addText('🎯 Post Visual:', 11, true);
+  addText('A dynamic video reel showing how gymnastics translates to being a superstar on the playground through skill connections.', 10);
   
-  // Add new page for guidelines
+  addText('📌 Content Notes:', 11, true);
+  addText('• Create 3 short video clips (15–20 seconds each)', 10);
+  addText('• Each clip combines multiple shots or angles of the same skill', 10);
+  addText('• Include multiple angles or shots, edited into one complete clip per skill', 10);
+  
+  addText('🎥 UPLOAD THESE 3 VIDEOS:', 11, true);
+  addText('📹 Video 1: Ring Swing ➝ Monkey Bars', 10, true);
+  addText('📹 Video 2: Rope Climb ➝ Rock Wall', 10, true);
+  addText('📹 Video 3: Trampoline ➝ Trampoline Park', 10, true);
+  
+  addSectionBreak();
+  
+  // Task 5: Finding Their Voice
+  addText('5. Finding Their Voice', 14, true, '#8B4A4A');
+  addText('📸 PHOTO COLLAGE | 6 PHOTOS', 11, true);
+  
+  addText('🎯 Post Visual:', 11, true);
+  addText('Tell the visual story of how a quieter kiddo finds their strength and sense of belonging at the gym. Message: "You don\'t need to be the loudest kid in the gym to have the strongest voice."', 10);
+  
+  addText('📌 Content Notes:', 11, true);
+  addText('• Capture 6 photos in SQUARE (1:1) aspect ratio', 10);
+  addText('• Prioritize consistent, clean lighting across all photos', 10);
+  addText('• Submit post-ready images', 10);
+  
+  addText('📷 UPLOAD THESE 6 PHOTOS:', 11, true);
+  addText('📸 Photo 1: The Quiet Start', 10, true);
+  addText('📸 Photo 2: The Gentle Invitation', 10, true);
+  addText('📸 Photo 3: First Tries', 10, true);
+  addText('📸 Photo 4: The Growing Confidence', 10, true);
+  addText('📸 Photo 5: The Triumph & Belonging', 10, true);
+  addText('📸 Photo 6: The Final Salute (Centerpiece)', 10, true);
+  
+  // Add new page for remaining content
   pdf.addPage();
   yPosition = margin;
   
+  // Task 6: Power Starts Here
+  addText('6. Power Starts Here', 14, true, '#8B4A4A');
+  addText('📸📹 PHOTO + VIDEO | 2 PHOTOS, 1 VIDEO', 11, true);
+  
+  addText('🎯 Post Visual:', 11, true);
+  addText('Pull back the curtain on the secret weapon behind a powerful roundoff: the \'mountain climber\' setup. Use a "right vs. wrong" comparison to show how one small change in shape can fuel an entirely different level of power.', 10);
+  
+  addText('📌 Content Notes:', 11, true);
+  addText('• All three pieces of content need to be filmed from the same place and angle', 10);
+  addText('• Goal is to capture clean, raw footage for post-editing', 10);
+  addText('• Set markers like tape on the floor to maintain consistency', 10);
+  
+  addText('🎥 UPLOAD THESE 3 FILES:', 11, true);
+  addText('📸 Photo 1: The CORRECT Mountain Climber Position ✅', 10, true);
+  addText('📸 Photo 2: The INCORRECT Mountain Climber Position ❌', 10, true);
+  addText('📹 Video 1: The Roundoff', 10, true);
+  
+  addSectionBreak();
+  
+  // Task 7: Progression Pyramid
+  addText('7. The Progression Pyramid Reel', 14, true, '#8B4A4A');
+  addText('📹 CINEMATIC REEL | 6 CLIPS', 11, true);
+  
+  addText('🎯 Post Visual:', 11, true);
+  addText('Showcase methodical coaching by breaking down the back walkover into a detailed progression. Build trust by demonstrating expert-level attention to technical detail and safe, step-by-step process.', 10);
+  
+  addText('📌 Content Notes:', 11, true);
+  addText('• Cinematic reel format', 10);
+  addText('• Clips for Step 2, 3, and 4 will be edited side-by-side', 10);
+  addText('• Focus on technical detail and safe progression', 10);
+  
+  addText('🎥 UPLOAD THESE 6 CLIPS:', 11, true);
+  addText('📹 Clip 1: Tabletop Shape', 10, true);
+  addText('📹 Clip 2: The Elevated Bridge (Push-up vs. Rockers)', 10, true);
+  addText('📹 Clip 3: The Knee Bridge (Wall Prep vs. Full Skill)', 10, true);
+  addText('📹 Clip 4: Cheese Mat Backbend (Shape vs. Rockers)', 10, true);
+  addText('📹 Clip 5: Standing Backbend to Vertical', 10, true);
+  addText('📹 Clip 6: Independent Back Walkover', 10, true);
+  
+  addSectionBreak();
+  
+  // Task 8: High-Five That Matters
+  addText('8. The High-Five That Matters', 14, true, '#8B4A4A');
+  addText('📹 DYNAMIC VIDEO REEL | 9 CLIPS', 11, true);
+  
+  addText('🎯 Post Visual:', 11, true);
+  addText('Fast-paced montage Reel tells a three-act story about coaching philosophy. Showcase rapid succession of nine distinct "skill-and-praise" moments showing complete emotional support system.', 10);
+  
+  addText('📌 Content Notes:', 11, true);
+  addText('• Create and upload NINE (9) separate, short video clips', 10);
+  addText('• Each clip should be a short edit of skill attempt + coach reaction', 10);
+  addText('• Theme: Effort. Encouragement. Celebration.', 10);
+  
+  addText('🎥 UPLOAD THESE 9 CLIPS:', 11, true);
+  addText('Category 1: The "Effort" High-Five (3 Clips)', 10, true);
+  addText('Category 2: The "Encouragement" Fist Bump (3 Clips)', 10, true);
+  addText('Category 3: The "Success" Celebration (3 Clips)', 10, true);
+  
+  addSectionBreak();
+  
+  // Task 9: Six Shapes
+  addText('9. The 6 Shapes That Build Every Gymnast', 14, true, '#8B4A4A');
+  addText('📸 PHOTO CAROUSEL | 6 PHOTOS', 11, true);
+  
+  addText('🎯 Post Visual:', 11, true);
+  addText('Educate parents on the six foundational body shapes in gymnastics. Each slide will feature a side-by-side comparison of basic shape with advanced skill that relies on that same shape.', 10);
+  
+  addText('📌 Content Notes:', 11, true);
+  addText('• Six clean, technically strong photos of foundational shapes', 10);
+  addText('• Will be paired with advanced skill photos in final edit', 10);
+  addText('• Goal: Build trust by showing systematic approach', 10);
+  
+  addText('📷 UPLOAD THESE 6 PHOTOS:', 11, true);
+  addText('🟩 Slide 1: Straight Body', 10, true);
+  addText('🟪 Slide 2: Hollow Body', 10, true);
+  addText('🟨 Slide 3: Arch Position', 10, true);
+  addText('🟦 Slide 4: Tuck Shape', 10, true);
+  addText('🟧 Slide 5: Pike Shape', 10, true);
+  addText('🔴 Slide 6: Straddle Shape (side view only)', 10, true);
+  
+  addSectionBreak();
+  addSectionBreak();
+  
+  // Guidelines Section
   addText('📋 CONTENT GUIDELINES', 16, true, '#8B4A4A');
   addSectionBreak();
   
