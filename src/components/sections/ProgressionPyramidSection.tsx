@@ -38,13 +38,15 @@ export function ProgressionPyramidSection() {
 
       <div className="requirements">
         <h3>🔥 Jayme's Notes (Strategy & Copy)</h3>
-        <p><strong>Data Point:</strong> Videos showing clear, step-by-step progressions are highly "savable" and establish deep coaching expertise.</p>
+        <p>A BWO isn't one big skill. It's a series of small, teachable wins stacked together.</p>
+        
+        <p><strong>Data Point:</strong> Videos with clear, step-by-step progressions are very "savable" and show coaching expertise.</p>
+        <p>"The Progression Pyramid" and "The 5 Shapes That Build Every Gymnast" are designed to highlight this deep foundational knowledge.</p>
+        <p><strong>Editing Note:</strong> Clips for Step 2, Step 3, and Step 4 will be edited to appear side-by-side in the final Reel to show direct micro-progressions.</p>
         
         <p><strong>Hook Idea:</strong> "How is a back walkover built? It starts with the smallest, safest steps."</p>
         
         <p><strong>Caption Idea:</strong> "Every big skill is a journey of small, mindful steps. Here's our path to the back walkover, where we build the foundation, the strength, and the confidence needed for success. #ProgressionPyramid #BackWalkover #GymnasticsTechnique"</p>
-        
-        <p><strong>Editing Note:</strong> The clips for Step 2, Step 3, and Step 4 will be edited to appear side-by-side in the final Reel to show the direct micro-progressions.</p>
       </div>
 
       <UploadChecklist items={checklistItems} section="progression-pyramid" />

@@ -220,7 +220,7 @@ export const generateFullContentPDF = async () => {
   addText('📹 CINEMATIC REEL | 6 CLIPS', 11, true);
   
   addText('🎯 Post Visual:', 11, true);
-  addText('Showcase methodical coaching by breaking down the back walkover into a detailed progression. Build trust by demonstrating expert-level attention to technical detail and safe, step-by-step process.', 10);
+  addText('A BWO isn\'t one big skill. It\'s a series of small, teachable wins stacked together. Showcase methodical coaching by breaking down the back walkover into a detailed progression. Build trust by demonstrating expert-level attention to technical detail and safe, step-by-step process.', 10);
   
   addText('📌 Content Notes:', 11, true);
   addText('• Cinematic reel format', 10);

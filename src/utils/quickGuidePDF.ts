@@ -181,7 +181,7 @@ export const generateQuickGuidePDF = async () => {
   addText('CINEMATIC REEL | 6 CLIPS', 10, true);
   
   addText('Post Objective:', 10, true);
-  addText('Showcase methodical coaching by breaking down the back walkover into detailed progressions.', 10);
+  addText('A BWO isn\'t one big skill. It\'s a series of small, teachable wins stacked together. Showcase methodical coaching by breaking down the back walkover into detailed progressions.', 10);
   
   addText('Required Clips:', 10, true);
   addText('1. Tabletop Shape: Foundational position', 10);
