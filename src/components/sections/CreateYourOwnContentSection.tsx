@@ -1008,9 +1008,9 @@ export function CreateYourOwnContentSection() {
   const handleCopyIdea = (idea: ContentIdea) => {
     const textToCopy = `${idea.title}\n\nThe idea: ${idea.hook}\n\nWhat to capture: ${idea.visualIdea}`;
     navigator.clipboard.writeText(textToCopy).then(() => {
-      alert(`✨ Nice choice! "${idea.title}" is ready to use. Make it your own!`);
+      alert(`✨ Nice choice! ${idea.title} is ready to use. Make it your own!`);
     }).catch(() => {
-      alert(`✨ Here's your idea: "${idea.title}"\n\nThe idea: ${idea.hook}\n\nWhat to capture: ${idea.visualIdea}\n\nMake it yours!`);
+      alert(`✨ Here's your idea: ${idea.title}\n\nThe idea: ${idea.hook}\n\nWhat to capture: ${idea.visualIdea}\n\nMake it yours!`);
     });
   };
 
@@ -1099,7 +1099,7 @@ export function CreateYourOwnContentSection() {
           </h3>
           {currentSearch && (
             <p className="search-results-text">
-              Found these for "{currentSearch}":
+              Found these for {currentSearch}:
             </p>
           )}
         </div>
@@ -1134,7 +1134,7 @@ export function CreateYourOwnContentSection() {
                 
                 <div className="idea-content">
                   <div className="idea-hook">
-                    <strong>The idea:</strong> "{idea.hook}"
+                    <strong>The idea:</strong> {idea.hook}
                   </div>
                   <div className="idea-visual">
                     <strong>What to capture:</strong> {idea.visualIdea}
