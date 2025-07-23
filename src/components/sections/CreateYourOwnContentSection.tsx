@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { ChevronUp } from 'lucide-react';
 
 interface ContentIdea {
   id: string;
@@ -169,6 +170,7 @@ export function CreateYourOwnContentSection() {
   const [currentMood, setCurrentMood] = useState('all');
   const [currentSearch, setCurrentSearch] = useState('');
   const [filteredIdeas, setFilteredIdeas] = useState<ContentIdea[]>([]);
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
     const filtered = allContentIdeas.filter(idea => {
@@ -181,6 +183,23 @@ export function CreateYourOwnContentSection() {
     });
     setFilteredIdeas(filtered);
   }, [currentMood, currentSearch]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      setShowBackToTop(scrollTop > 300);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
 
   const handleCopyIdea = (idea: ContentIdea) => {
     const textToCopy = `${idea.title}\n\nThe idea: ${idea.hook}\n\nWhat to capture: ${idea.visualIdea}`;
@@ -204,7 +223,7 @@ export function CreateYourOwnContentSection() {
   };
 
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem' }}>
+    <div className="create-your-own-content-container">
       <h1>🎬 CREATE YOUR OWN CONTENT</h1>
 
       <div className="desc">
@@ -225,45 +244,25 @@ export function CreateYourOwnContentSection() {
       </div>
 
       {/* Search & Filter Section */}
-      <div style={{ margin: '2rem 0' }}>
+      <div className="inspiration-section">
         <h3>🤹‍♀️ Need Inspiration?</h3>
-        <p className="desc">
+        <p className="inspiration-description">
           Browse by your current mood or search for anything that inspires you. 💡 <strong>Reminder:</strong> These are just starting points, not scripts. Use them as-is, tweak them, mix and match, or let them spark something completely different.
         </p>
         
         {/* Search Bar */}
-        <div style={{ position: 'relative', marginBottom: '2rem' }}>
+        <div className="search-container">
           <input
             type="text"
             placeholder="Search for anything that inspires you..."
             value={currentSearch}
             onChange={(e) => setCurrentSearch(e.target.value)}
-            style={{
-              width: '100%',
-              padding: '1rem 3rem 1rem 1rem',
-              border: '2px solid var(--dropdown-bg)',
-              borderRadius: '25px',
-              fontSize: '1rem',
-              background: 'var(--white)',
-              transition: 'border-color 0.2s ease'
-            }}
+            className="search-input"
           />
           {currentSearch && (
             <button
               onClick={() => setCurrentSearch('')}
-              style={{
-                position: 'absolute',
-                right: '1rem',
-                top: '50%',
-                transform: 'translateY(-50%)',
-                background: 'none',
-                border: 'none',
-                color: 'var(--warm-gray)',
-                cursor: 'pointer',
-                fontSize: '1.2rem',
-                padding: '0.25rem',
-                borderRadius: '50%'
-              }}
+              className="search-clear-btn"
             >
               ✕
             </button>
@@ -271,36 +270,23 @@ export function CreateYourOwnContentSection() {
         </div>
 
         {/* Mood Filter Pills */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '2rem' }}>
+        <div className="mood-filter-pills">
           {Object.entries(moodCategories).map(([key, { emoji, title }]) => (
             <button
               key={key}
               onClick={() => setCurrentMood(key)}
-              style={{
-                background: currentMood === key ? 'var(--accent-color)' : 'var(--white)',
-                border: '2px solid var(--dropdown-bg)',
-                borderColor: currentMood === key ? 'var(--accent-color)' : 'var(--dropdown-bg)',
-                borderRadius: '25px',
-                padding: '0.75rem 1.25rem',
-                cursor: 'pointer',
-                transition: 'all 0.2s ease',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.5rem',
-                fontWeight: '500',
-                color: currentMood === key ? 'var(--white)' : 'var(--text-main)'
-              }}
+              className={`mood-pill ${currentMood === key ? 'active' : ''}`}
             >
-              <span style={{ fontSize: '1.1rem' }}>{emoji}</span>
+              <span className="mood-emoji">{emoji}</span>
               <span>{title}</span>
-              <span style={{ fontSize: '0.85rem', opacity: '0.8' }}>({getPillCount(key)})</span>
+              <span className="mood-count">({getPillCount(key)})</span>
             </button>
           ))}
         </div>
       </div>
 
       {/* Results Header */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', margin: '2rem 0', flexWrap: 'wrap', gap: '1rem' }}>
+      <div className="results-header">
         <div>
           <h3>
             {currentMood === 'all'
@@ -308,7 +294,7 @@ export function CreateYourOwnContentSection() {
               : `${moodCategories[currentMood].emoji} ${filteredIdeas.length} ${moodCategories[currentMood].title} Ideas`}
           </h3>
           {currentSearch && (
-            <p style={{ color: 'var(--warm-gray)', margin: '0', fontStyle: 'italic' }}>
+            <p className="search-results-text">
               Found these for "{currentSearch}":
             </p>
           )}
@@ -316,15 +302,7 @@ export function CreateYourOwnContentSection() {
         {currentMood !== 'all' && (
           <button 
             onClick={() => setCurrentMood('all')}
-            style={{
-              background: 'var(--warm-gray)',
-              color: 'var(--white)',
-              border: 'none',
-              padding: '0.5rem 1rem',
-              borderRadius: '20px',
-              cursor: 'pointer',
-              fontWeight: '500'
-            }}
+            className="browse-all-btn"
           >
             ✨ Browse Everything
           </button>
@@ -333,75 +311,36 @@ export function CreateYourOwnContentSection() {
 
       {/* Ideas Grid */}
       {filteredIdeas.length > 0 ? (
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', 
-          gap: '1.5rem', 
-          marginBottom: '3rem' 
-        }}>
+        <div className="ideas-grid">
           {filteredIdeas.map(idea => {
             const category = moodCategories[idea.mood];
             return (
               <div 
                 key={idea.id} 
-                style={{
-                  background: 'var(--white)',
-                  border: '2px solid var(--dropdown-bg)',
-                  borderRadius: '12px',
-                  padding: '1.5rem',
-                  transition: 'all 0.3s ease',
-                  boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
-                }}
+                className="idea-card"
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-                  <span style={{ 
-                    fontSize: '1.5rem', 
-                    background: 'var(--main-bg)', 
-                    padding: '0.5rem', 
-                    borderRadius: '8px' 
-                  }}>
+                <div className="idea-card-header">
+                  <span className="idea-emoji">
                     {category.emoji}
                   </span>
-                  <h4 style={{ 
-                    color: 'var(--text-main)', 
-                    fontSize: '1.1rem', 
-                    fontWeight: '600', 
-                    margin: '0', 
-                    lineHeight: '1.3' 
-                  }}>
+                  <h4 className="idea-title">
                     {idea.title}
                   </h4>
                 </div>
                 
-                <div style={{ marginBottom: '1.5rem' }}>
-                  <div style={{
-                    marginBottom: '1rem',
-                    padding: '1rem',
-                    background: 'var(--main-bg)',
-                    borderRadius: '8px',
-                    borderLeft: '4px solid var(--accent-color)'
-                  }}>
+                <div className="idea-content">
+                  <div className="idea-hook">
                     <strong>The idea:</strong> "{idea.hook}"
                   </div>
-                  <div style={{ color: 'var(--warm-gray)', fontSize: '0.95rem', lineHeight: '1.4' }}>
+                  <div className="idea-visual">
                     <strong>What to capture:</strong> {idea.visualIdea}
                   </div>
                 </div>
                 
-                <div>
+                <div className="idea-action">
                   <button 
                     onClick={() => handleCopyIdea(idea)}
-                    style={{
-                      background: 'var(--accent-color)',
-                      color: 'var(--white)',
-                      border: 'none',
-                      padding: '0.75rem 1rem',
-                      borderRadius: '6px',
-                      cursor: 'pointer',
-                      fontWeight: '600',
-                      width: '100%',
-                      transition: 'all 0.2s ease'
-                    }}
+                    className="copy-idea-btn"
                   >
                     📋 Grab This Idea
                   </button>
@@ -411,33 +350,30 @@ export function CreateYourOwnContentSection() {
           })}
         </div>
       ) : (
-        <div style={{
-          textAlign: 'center',
-          padding: '4rem 2rem',
-          background: 'var(--main-bg)',
-          borderRadius: '12px',
-          margin: '2rem 0'
-        }}>
-          <span style={{ fontSize: '4rem', display: 'block', marginBottom: '1rem' }}>🔍</span>
+        <div className="no-results">
+          <span className="no-results-icon">🔍</span>
           <h4>No matches this time</h4>
-          <p style={{ color: 'var(--warm-gray)', marginBottom: '2rem' }}>
+          <p className="no-results-text">
             Try a different filter or search term - or just browse everything!
           </p>
           <button 
             onClick={handleResetFilters}
-            style={{
-              background: 'var(--accent-color)',
-              color: 'var(--white)',
-              border: 'none',
-              padding: '0.75rem 1.5rem',
-              borderRadius: '25px',
-              cursor: 'pointer',
-              fontWeight: '600'
-            }}
+            className="reset-filters-btn"
           >
             🔄 Start Fresh
           </button>
         </div>
+      )}
+
+      {/* Back to Top Button */}
+      {showBackToTop && (
+        <button
+          onClick={scrollToTop}
+          className="back-to-top-btn"
+          aria-label="Back to top"
+        >
+          <ChevronUp size={24} />
+        </button>
       )}
     </div>
   );
