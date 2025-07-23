@@ -13,6 +13,7 @@ import { SixShapesSection } from './sections/SixShapesSection';
 import { GuidelinesSection } from './sections/GuidelinesSection';
 import { TechnicalSection } from './sections/TechnicalSection';
 import { SubmissionSection } from './sections/SubmissionSection';
+import { CreateYourOwnContentSection } from './sections/CreateYourOwnContentSection';
 
 interface MainContentProps {
   activeSection: string;
@@ -41,6 +42,8 @@ export function MainContent({ activeSection }: MainContentProps) {
         return <HighFiveThatMattersSection />;
       case 'six-shapes':
         return <SixShapesSection />;
+      case 'create-your-own-content':
+        return <CreateYourOwnContentSection />;
       case 'guidelines':
         return <GuidelinesSection />;
       case 'technical':
@@ -64,6 +67,7 @@ export function MainContent({ activeSection }: MainContentProps) {
       case 'progression-pyramid': return 'Progression-Pyramid-Reel-Guide';
       case 'high-five-that-matters': return 'High-Five-That-Matters-Guide';
       case 'six-shapes': return 'Six-Shapes-That-Build-Every-Gymnast-Guide';
+      case 'create-your-own-content': return 'Create-Your-Own-Content-Guide';
       case 'guidelines': return 'Content-Guidelines';
       case 'technical': return 'Technical-Standards';
       case 'submission': return 'Submission-Process';
