@@ -1043,7 +1043,7 @@ export function CreateYourOwnContentSection() {
 
         <h3>🗣️ Message from Jayme</h3>
         <p>
-          <em>"For this final August post, there's no specific shot list. The most important thing is that IT comes from you. We want to see the gym through your eyes. Have fun with it, get creative, and share a story that you're passionate about. We can't wait to see what you create!"</em> —Jayme
+          <em>For this final August post, there's no specific shot list. The most important thing is that IT comes from you. We want to see the gym through your eyes. Have fun with it, get creative, and share a story that you're passionate about. We can't wait to see what you create!</em> —Leaps of Love -Jayme
         </p>
       </div>
 
