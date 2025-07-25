@@ -1028,30 +1028,29 @@ export function CreateYourOwnContentSection() {
 
   return (
     <div className="create-your-own-content-container">
-      <h1>🎬 CREATE YOUR OWN CONTENT</h1>
+      <h1>💡 Content Ideas Hub</h1>
 
       <div className="desc">
-        <h3>🎯 Your Mission:</h3>
-        <p>Create one 30–60 second Reel that feels authentic and meaningful. Show us the gym through your eyes—your voice, your experience, your style.</p>
+        <h3>🎯 Purpose</h3>
+        <p>This is your go-to space to get inspired whenever you want to create something for the gym. There are no assignments or deadlines here—just ideas you can pull from whenever creativity strikes.</p>
 
-        <h3>📌 Guidelines at a Glance</h3>
+        <h3>📖 How to Use This Hub</h3>
         <ul>
-          <li><strong>Be Age Appropriate:</strong> Content should reflect positive and supportive values.</li>
-          <li><strong>Highlight Your Gym:</strong> Your reel should showcase your gym community, culture, or uniqueness.</li>
-          <li><strong>Be You:</strong> Personality matters most. Create something that feels true to you!</li>
+          <li><strong>Browse Freely:</strong> Scroll through prompts, moods, and examples.</li>
+          <li><strong>Mix & Match:</strong> Combine ideas, tweak them, or use them as springboards for something totally new.</li>
+          <li><strong>Stay Authentic:</strong> Focus on showing the gym through your unique perspective. There's no "right" format—just create what feels real to you.</li>
         </ul>
 
-        <h3>quick note</h3>
         <p>
-          <em>For this final August post, there's no specific shot list. The most important thing is that it comes from you. We want to see the gym through your eyes. Have fun with it, get creative, and share a story that you're passionate about. We can't wait to see what you create!</em> —Leaps of Love -Jayme
+          <em>If you ever want more—just ask. I have endless ideas stored away. Hope this helps!</em>
         </p>
       </div>
 
       {/* Search & Filter Section */}
       <div className="inspiration-section">
-        <h3>🤹‍♀️ Need Inspiration?</h3>
+        <h3>🤹‍♀️ Browse Ideas</h3>
         <p className="inspiration-description">
-          Browse by your current mood or search for anything that inspires you. 💡 <strong>Reminder:</strong> These are just starting points, not scripts. Use them as-is, tweak them, mix and match, or let them spark something completely different. There's no "right" way to use them—what matters is that it feels authentic to you. If you ever want more—just ask. I have endless ideas stored away. Hope this helps!
+          Browse by your current mood or search for anything that inspires you. 💡 <strong>Reminder:</strong> These are just starting points, not scripts. Use them as-is, tweak them, mix and match, or let them spark something completely different. There's no "right" way to use them—what matters is that it feels authentic to you.
         </p>
         
         {/* Search Bar */}
