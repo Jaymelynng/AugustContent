@@ -212,6 +212,12 @@ export function ProgressionPyramidSection() {
       </div>
 
       <GymSelector postType="multiple-videos" />
+
+      <div className="back-to-top-container">
+        <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="back-to-top-btn">
+          ⬆️ Back to Top
+        </button>
+      </div>
     </div>
   );
 }

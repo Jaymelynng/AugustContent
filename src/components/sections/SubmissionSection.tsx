@@ -322,6 +322,12 @@ export function SubmissionSection() {
           This helps us organize everything properly and makes it easy to find your content later.
         </p>
       </div>
+
+      <div className="back-to-top-container">
+        <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="back-to-top-btn">
+          ⬆️ Back to Top
+        </button>
+      </div>
     </div>
   );
 }

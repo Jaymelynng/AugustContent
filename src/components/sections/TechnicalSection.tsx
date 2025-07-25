@@ -31,6 +31,12 @@ export function TechnicalSection() {
         <h3>💡 The Golden Rule</h3>
         <p>Before hitting record, ask yourself: <b>"Would I want this shared if it were my child?"</b> If yes—film it! If you hesitate, don't.</p>
       </div>
+
+      <div className="back-to-top-container">
+        <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="back-to-top-btn">
+          ⬆️ Back to Top
+        </button>
+      </div>
     </div>
   );
 }
