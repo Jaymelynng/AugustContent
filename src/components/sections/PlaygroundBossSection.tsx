@@ -38,11 +38,11 @@ export function PlaygroundBossSection() {
 
       <div className="requirements">
         <h3>📌 Video Content to Capture</h3>
-        <p>🎥 Create 3 short video clips (15–20 seconds each) — one per skill listed below.</p>
+        <p>🎥 Create 3 short video clips (10–20 seconds each) — one per skill listed below.</p>
         <p>Each clip = a mini edit that combines multiple shots or angles of the same skill.</p>
         <p>Each of the 3 videos should be:</p>
         <ul>
-          <li>⏱️ <strong>15–20 seconds long</strong></li>
+          <li>⏱️ <strong>10–20 seconds long</strong></li>
           <li>🎬 <strong>Include multiple angles or shots</strong></li>
           <li>✂️ <strong>Edited by you into one complete clip per skill</strong></li>
           <li>🛠️ <strong>No overlays needed</strong> — I'll add transitions and visuals to show how each skill connects to its real-life playground version.</li>
@@ -64,7 +64,7 @@ export function PlaygroundBossSection() {
               <div className="scene-description">
                 <h5>Gym Skill: Ring swing</h5>
                 <p><strong>Playground Translation:</strong> Monkey bars</p>
-                <p><strong>Video Length:</strong> 15–20 seconds (include multiple shots)</p>
+                <p><strong>Video Length:</strong> 10–20 seconds (include multiple shots)</p>
                 
                 <p><strong>Description:</strong> Film a student swinging across the rings on your ninja course.</p>
                 
@@ -82,7 +82,7 @@ export function PlaygroundBossSection() {
               <div className="scene-description">
                 <h5>Gym Skill: Rope climb</h5>
                 <p><strong>Playground Translation:</strong> Rock wall</p>
-                <p><strong>Video Length:</strong> 15–20 seconds (include multiple shots)</p>
+                <p><strong>Video Length:</strong> 10–20 seconds (include multiple shots)</p>
                 
                 <p><strong>Description:</strong> Film students climbing the rope with proper form.</p>
                 
@@ -100,7 +100,7 @@ export function PlaygroundBossSection() {
               <div className="scene-description">
                 <h5>Gym Skill: Trampoline or tumble track passes</h5>
                 <p><strong>Playground Translation:</strong> Trampoline park</p>
-                <p><strong>Video Length:</strong> 15–20 seconds (include multiple shots)</p>
+                <p><strong>Video Length:</strong> 10–20 seconds (include multiple shots)</p>
                 
                 <p><strong>Description:</strong> Film students doing jumps, passes, or fun skills. Can be one child or a montage of several clips.</p>
                 
