@@ -2052,6 +2052,49 @@ h4 {
   color: var(--sidebar-bg);
 }
 
+.search-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.random-idea-btn, .clear-filters-btn {
+  background: var(--sidebar-bg);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  min-width: 140px;
+}
+
+.random-idea-btn:hover:not(:disabled) {
+  background: var(--accent-color);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.random-idea-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.clear-filters-btn {
+  background: var(--warm-gray);
+}
+
+.clear-filters-btn:hover {
+  background: var(--muted-purple);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
 .mood-filter-pills {
   display: flex;
   flex-wrap: wrap;
@@ -2146,6 +2189,22 @@ h4 {
   border-color: var(--accent-color);
 }
 
+.idea-card.highlighted {
+  border-color: var(--sidebar-bg);
+  box-shadow: 0 8px 25px rgba(212, 165, 165, 0.3);
+  transform: translateY(-6px);
+  animation: highlight-pulse 3s ease-in-out;
+}
+
+@keyframes highlight-pulse {
+  0%, 100% { 
+    box-shadow: 0 8px 25px rgba(212, 165, 165, 0.3);
+  }
+  50% { 
+    box-shadow: 0 12px 30px rgba(212, 165, 165, 0.5);
+  }
+}
+
 .idea-card-header {
   display: flex;
   align-items: center;
@@ -2202,6 +2261,16 @@ h4 {
   background: var(--sidebar-bg);
   transform: translateY(-1px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.copy-idea-btn.copied {
+  background: #28a745;
+  color: white;
+}
+
+.copy-idea-btn.copied:hover {
+  background: #28a745;
+  transform: none;
 }
 
 .no-results {

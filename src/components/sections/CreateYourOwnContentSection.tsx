@@ -975,6 +975,8 @@ export function CreateYourOwnContentSection() {
   const [currentSearch, setCurrentSearch] = useState('');
   const [filteredIdeas, setFilteredIdeas] = useState<ContentIdea[]>([]);
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [highlightedIdeaId, setHighlightedIdeaId] = useState<string | null>(null);
+  const [copiedIdeaId, setCopiedIdeaId] = useState<string | null>(null);
 
   useEffect(() => {
     const filtered = allContentIdeas.filter(idea => {
@@ -1008,7 +1010,8 @@ export function CreateYourOwnContentSection() {
   const handleCopyIdea = (idea: ContentIdea) => {
     const textToCopy = `${idea.title}\n\nThe idea: ${idea.hook}\n\nWhat to capture: ${idea.visualIdea}`;
     navigator.clipboard.writeText(textToCopy).then(() => {
-      alert(`✨ Nice choice! ${idea.title} is ready to use. Make it your own!`);
+      setCopiedIdeaId(idea.id);
+      setTimeout(() => setCopiedIdeaId(null), 2000);
     }).catch(() => {
       alert(`✨ Here's your idea: ${idea.title}\n\nThe idea: ${idea.hook}\n\nWhat to capture: ${idea.visualIdea}\n\nMake it yours!`);
     });
@@ -1019,6 +1022,30 @@ export function CreateYourOwnContentSection() {
     setCurrentSearch('');
   };
 
+  const handleClearAllFilters = () => {
+    setCurrentMood('all');
+    setCurrentSearch('');
+  };
+
+  const handleRandomIdea = () => {
+    if (filteredIdeas.length === 0) return;
+    
+    const randomIndex = Math.floor(Math.random() * filteredIdeas.length);
+    const randomIdea = filteredIdeas[randomIndex];
+    
+    setHighlightedIdeaId(randomIdea.id);
+    
+    // Scroll to the random idea card
+    setTimeout(() => {
+      const element = document.getElementById(`idea-${randomIdea.id}`);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }, 100);
+    
+    // Remove highlight after 3 seconds
+    setTimeout(() => setHighlightedIdeaId(null), 3000);
+  };
   const getPillCount = (mood: string) => {
     if (mood === 'all') {
       return allContentIdeas.length;
@@ -1072,6 +1099,25 @@ export function CreateYourOwnContentSection() {
           )}
         </div>
 
+        {/* Action Buttons */}
+        <div className="search-actions">
+          <button
+            onClick={handleRandomIdea}
+            className="random-idea-btn"
+            disabled={filteredIdeas.length === 0}
+          >
+            🎲 Surprise Me!
+          </button>
+          
+          {(currentMood !== 'all' || currentSearch) && (
+            <button
+              onClick={handleClearAllFilters}
+              className="clear-filters-btn"
+            >
+              🔄 Clear All Filters
+            </button>
+          )}
+        </div>
         {/* Mood Filter Pills */}
         <div className="mood-filter-pills">
           {Object.entries(moodCategories).map(([key, { emoji, title }]) => (
@@ -1117,10 +1163,13 @@ export function CreateYourOwnContentSection() {
         <div className="ideas-grid">
           {filteredIdeas.map(idea => {
             const category = moodCategories[idea.mood];
+            const isHighlighted = highlightedIdeaId === idea.id;
+            const isCopied = copiedIdeaId === idea.id;
             return (
               <div 
                 key={idea.id} 
-                className="idea-card"
+                id={`idea-${idea.id}`}
+                className={`idea-card ${isHighlighted ? 'highlighted' : ''}`}
               >
                 <div className="idea-card-header">
                   <span className="idea-emoji">
@@ -1143,9 +1192,9 @@ export function CreateYourOwnContentSection() {
                 <div className="idea-action">
                   <button 
                     onClick={() => handleCopyIdea(idea)}
-                    className="copy-idea-btn"
+                    className={`copy-idea-btn ${isCopied ? 'copied' : ''}`}
                   >
-                    📋 Grab This Idea
+                    {isCopied ? '✅ Copied!' : '📋 Grab This Idea'}
                   </button>
                 </div>
               </div>
