@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Home, Camera, Video, Award, Users, Brain, FileText, Settings, Upload } from 'lucide-react';
+import { Home, Camera, Video, Award, Brain, FileText, Settings, Upload } from 'lucide-react';
 
 interface SidebarProps {
   activeSection: string;
@@ -20,7 +20,9 @@ const navigationItems = [
   { id: 'progression-pyramid', label: 'The Progression Pyramid Reel', icon: Video, category: 'content' },
   { id: 'high-five-that-matters', label: 'The High-Five That Matters', icon: Video, category: 'content' },
   { id: 'six-shapes', label: 'The 6 Shapes That Build Every Gymnast', icon: Award, category: 'content' },
-  { id: 'create-your-own-content', label: 'Create Your Own Content', icon: Award, category: 'content' },
+  
+  // Content Ideas
+  { id: 'create-your-own-content', label: 'Create Your Own Content', icon: Brain, category: 'ideas' },
   
   // Guides
   { id: 'guidelines', label: 'Guidelines', icon: FileText, category: 'guides' },
@@ -71,6 +73,7 @@ export function Sidebar({ activeSection, onSectionChange }: SidebarProps) {
       <ul className="nav-list">
         {renderSection('home', 'Welcome', navigationItems)}
         {renderSection('content', 'Content', navigationItems)}
+        {renderSection('ideas', 'Content Ideas', navigationItems)}
         {renderSection('guides', 'Guides', navigationItems)}
       </ul>
     </aside>
