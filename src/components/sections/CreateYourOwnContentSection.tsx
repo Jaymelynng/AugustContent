@@ -1051,7 +1051,7 @@ export function CreateYourOwnContentSection() {
       <div className="inspiration-section">
         <h3>🤹‍♀️ Need Inspiration?</h3>
         <p className="inspiration-description">
-          Browse by your current mood or search for anything that inspires you. 💡 <strong>Reminder:</strong> These are just starting points, not scripts. Use them as-is, tweak them, mix and match, or let them spark something completely different.
+          Browse by your current mood or search for anything that inspires you. 💡 <strong>Reminder:</strong> These are just starting points, not scripts. Use them as-is, tweak them, mix and match, or let them spark something completely different. There's no "right" way to use them—what matters is that it feels authentic to you. If you ever want more—just ask. I have endless ideas stored away. Hope this helps!
         </p>
         
         {/* Search Bar */}
