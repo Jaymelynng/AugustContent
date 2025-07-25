@@ -1094,7 +1094,7 @@ export function CreateYourOwnContentSection() {
         <div>
           <h3>
             {currentMood === 'all'
-              ? `✨ ${filteredIdeas.length} Ideas to Explore`
+              ? `✨ Ideas to Explore`
               : `${moodCategories[currentMood].emoji} ${filteredIdeas.length} ${moodCategories[currentMood].title} Ideas`}
           </h3>
           {currentSearch && (
