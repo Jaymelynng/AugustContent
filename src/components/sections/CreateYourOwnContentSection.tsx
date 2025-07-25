@@ -1041,7 +1041,7 @@ export function CreateYourOwnContentSection() {
           <li><strong>Be You:</strong> Personality matters most. Create something that feels true to you!</li>
         </ul>
 
-        <h3>🗣️ Message from Jayme</h3>
+        <h3>quick note</h3>
         <p>
           <em>For this final August post, there's no specific shot list. The most important thing is that it comes from you. We want to see the gym through your eyes. Have fun with it, get creative, and share a story that you're passionate about. We can't wait to see what you create!</em> —Leaps of Love -Jayme
         </p>
