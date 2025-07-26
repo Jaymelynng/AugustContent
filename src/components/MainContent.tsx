@@ -10,6 +10,7 @@ import { PowerStartsHereSection } from './sections/PowerStartsHereSection';
 import { ProgressionPyramidSection } from './sections/ProgressionPyramidSection';
 import { HighFiveThatMattersSection } from './sections/HighFiveThatMattersSection';
 import { SixShapesSection } from './sections/SixShapesSection';
+import { CreateYourOwnContentPost } from './sections/CreateYourOwnContentPost';
 import { GuidelinesSection } from './sections/GuidelinesSection';
 import { TechnicalSection } from './sections/TechnicalSection';
 import { SubmissionSection } from './sections/SubmissionSection';
@@ -17,9 +18,10 @@ import { CreateYourOwnContentSection } from './sections/CreateYourOwnContentSect
 
 interface MainContentProps {
   activeSection: string;
+  onSectionChange: (section: string) => void;
 }
 
-export function MainContent({ activeSection }: MainContentProps) {
+export function MainContent({ activeSection, onSectionChange }: MainContentProps) {
   const renderContent = () => {
     switch (activeSection) {
       case 'intro':
@@ -42,6 +44,8 @@ export function MainContent({ activeSection }: MainContentProps) {
         return <HighFiveThatMattersSection />;
       case 'six-shapes':
         return <SixShapesSection />;
+      case 'create-your-own-content-post':
+        return <CreateYourOwnContentPost onSectionChange={onSectionChange} />;
       case 'create-your-own-content':
         return <CreateYourOwnContentSection />;
       case 'guidelines':
@@ -67,6 +71,7 @@ export function MainContent({ activeSection }: MainContentProps) {
       case 'progression-pyramid': return 'Progression-Pyramid-Reel-Guide';
       case 'high-five-that-matters': return 'High-Five-That-Matters-Guide';
       case 'six-shapes': return 'Six-Shapes-That-Build-Every-Gymnast-Guide';
+      case 'create-your-own-content-post': return 'Create-Your-Own-Content-Post-Guide';
       case 'create-your-own-content': return 'Create-Your-Own-Content-Guide';
       case 'guidelines': return 'Content-Guidelines';
       case 'technical': return 'Technical-Standards';

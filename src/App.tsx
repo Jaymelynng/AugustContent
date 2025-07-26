@@ -12,7 +12,7 @@ function App() {
       <ProgressProvider>
           <div className="min-h-screen bg-gray-50 flex">
             <Sidebar activeSection={activeSection} onSectionChange={setActiveSection} />
-            <MainContent activeSection={activeSection} />
+            <MainContent activeSection={activeSection} onSectionChange={setActiveSection} />
           </div>
       </ProgressProvider>
     </ContentProvider>

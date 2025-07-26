@@ -2332,6 +2332,115 @@ h4 {
   background: var(--accent-color);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+/* Create Your Own Content Post Styles */
+.inspiration-link-section {
+  background: linear-gradient(135deg, var(--dropdown-bg), #f0e6e6);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border: 2px solid var(--sidebar-bg);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.inspiration-header h4 {
+  color: var(--sidebar-bg) !important;
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.inspiration-header p {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.reminder-box {
+  background: rgba(176, 138, 138, 0.2);
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: 2px solid var(--accent-color);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+.ideas-hub-access {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.ideas-hub-btn {
+  background: linear-gradient(135deg, var(--sidebar-bg), var(--accent-color));
+  color: var(--white);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  min-width: 280px;
+  margin-bottom: 0.8rem;
+}
+
+.ideas-hub-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, var(--accent-color), var(--sidebar-bg));
+}
+
+.ideas-hub-description {
+  color: var(--warm-gray);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.ideas-preview {
+  margin-top: 1.5rem;
+}
+
+.ideas-preview h5 {
+  color: var(--sidebar-bg) !important;
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.mood-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+}
+
+.mood-preview-item {
+  background: var(--white);
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid var(--dropdown-bg);
+  transition: transform 0.2s ease;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.mood-preview-item:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-color);
+}
+
+.mood-emoji {
+  font-size: 1.2rem;
+}
+
 }
 
 /* Mobile Responsive Styles for Create Your Own Content */

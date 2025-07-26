@@ -20,9 +20,10 @@ const navigationItems = [
   { id: 'progression-pyramid', label: 'The Progression Pyramid Reel', icon: Video, category: 'content' },
   { id: 'high-five-that-matters', label: 'The High-Five That Matters', icon: Video, category: 'content' },
   { id: 'six-shapes', label: 'The 6 Shapes That Build Every Gymnast', icon: Award, category: 'content' },
+  { id: 'create-your-own-content-post', label: 'Create Your Own Content', icon: Brain, category: 'content' },
   
   // Content Ideas
-  { id: 'create-your-own-content', label: 'Create Your Own Content', icon: Brain, category: 'ideas' },
+  { id: 'create-your-own-content', label: 'Content Ideas Hub', icon: Brain, category: 'ideas' },
   
   // Guides
   { id: 'guidelines', label: 'Guidelines', icon: FileText, category: 'guides' },

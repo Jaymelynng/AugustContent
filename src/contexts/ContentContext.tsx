@@ -176,6 +176,17 @@ const defaultAugustContent: ContentMonth = {
         { id: 'pike-shape', label: 'Slide 5: Pike Shape', type: 'photo' },
         { id: 'straddle-shape', label: 'Slide 6: Straddle Shape', type: 'photo' }
       ]
+    },
+    {
+      id: 'create-your-own-content-post',
+      order: 9,
+      title: 'CREATE YOUR OWN CONTENT',
+      type: 'video',
+      description: 'Create one 30–60 second Reel that feels authentic and meaningful. Show us the gym through your eyes—your voice, your experience, your style.',
+      requirements: ['30-60 seconds length', 'Age-appropriate content', 'Highlight your gym community/culture', 'Authentic and personal perspective'],
+      items: [
+        { id: 'custom-reel', label: 'Your Custom 30-60 Second Reel', type: 'video' }
+      ]
     }
   ]
 };
