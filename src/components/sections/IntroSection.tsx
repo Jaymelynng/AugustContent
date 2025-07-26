@@ -138,6 +138,44 @@ export function IntroSection() {
             </div>
           </article>
           
+          <article className="news-article featured">
+            <div className="news-meta">
+              <span className="news-badge info">📝 PROCESS NOTE</span>
+              <time className="news-date">July 2025</time>
+            </div>
+            <h3 className="news-headline">Hope You're All Doing Fantastic!</h3>
+            <p className="news-summary">
+              Just some quick notes from July's content—a friendly reminder about video timing that's all about making everyone's life easier. I'm in the process of getting a new computer and will be adding some extra posts this weekend to catch up.
+            </p>
+            
+            <div className="news-details">
+              <h4><strong>Process Goals - Super Simple Breakdown:</strong></h4>
+              <ul>
+                <li>Generate quality content that provides value for families.</li>
+                <li>Provide you with clear direction and vision so you can focus on what matters most—capturing awesome content, which is the most important part of this entire system. The goal is to create a process that can scale while still giving you the ability to be creative and unique. Instructions are designed to work for everyone with all different gymnastics backgrounds and experience levels, so if you have feedback, please let me know.</li>
+              </ul>
+              
+              <h4><strong>Here's What Helps the Editing Process Run Smoothly:</strong></h4>
+              <p>While you're creating, on the back end, that's when your templates are customized to your gym's brand.</p>
+              <p>When content and instructions are being created, the planning begins for building the templates. While you are doing the important part of getting the content, I can prep everyone's template to their brand and gym. The goal is that once it's turned in, I can place your clips in its designated spot quickly.</p>
+              <p>When clips match the suggested time ranges (like 15-20 seconds), the templates are built around those timing ranges, so when clips fit, they drop right into place.</p>
+              
+              <h4><strong>What Happens When Timing Is Different:</strong></h4>
+              <p>If clips come in much shorter or longer than planned for, it requires rebuilding timing for text, transitions, and effects throughout the video. Those 15-minute adjustments here and there for all those clips add up quicker than you'd think across all the gyms, and we want to keep things moving smoothly for everyone.</p>
+              
+              <h4><strong>The Goal:</strong></h4>
+              <p>Take as much work off everyone's plate as possible while keeping each gym's content authentic and unique.</p>
+              
+              <div className="news-reminder">
+                <strong>Bottom Line:</strong> When the clips have a time range, I just wanted to explain why and how it influences the process. Your creativity and gym's personality are what make the content special—the timing just helps the system work smoothly for all of us.
+              </div>
+              
+              <p style={{ marginTop: '1rem', fontStyle: 'italic', color: '#8B4A4A' }}>
+                <strong>Thanks for being awesome! Your content makes the difference. 💪</strong>
+              </p>
+            </div>
+          </article>
+          
           <article className="news-article">
             <div className="news-meta">
               <span className="news-badge info">📄 INFO</span>
