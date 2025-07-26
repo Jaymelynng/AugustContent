@@ -2332,6 +2332,22 @@ h4 {
   background: var(--accent-color);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Embedded Content Ideas Styling */
+.embedded-content-ideas {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  border: 2px solid #dee2e6;
+}
+
+.embedded-content-ideas .create-your-own-content-container h1 {
+  margin-top: 0;
+  color: #721c24;
+}
+
 /* Create Your Own Content Post Styles */
 .inspiration-link-section {
   background: linear-gradient(135deg, var(--dropdown-bg), #f0e6e6);
@@ -2439,8 +2455,6 @@ h4 {
 
 .mood-emoji {
   font-size: 1.2rem;
-}
-
 }
 
 /* Mobile Responsive Styles for Create Your Own Content */
