@@ -52,71 +52,6 @@ export function IntroSection() {
         </div>
       </div>
 
-      {/* Your Role Section */}
-      <div className="role-section">
-        <h2 className="role-title">Your Role as Content Creator</h2>
-        <div className="role-grid">
-          <div className="role-item">
-            <div className="role-icon">✨</div>
-            <span className="role-text">Represent the gym with professionalism and positivity</span>
-          </div>
-          <div className="role-item">
-            <div className="role-icon">📸</div>
-            <span className="role-text">Capture high-quality, on-brand content (photos and videos)</span>
-          </div>
-          <div className="role-item">
-            <div className="role-icon">🛡️</div>
-            <span className="role-text">Follow technique, safety, and privacy rules</span>
-          </div>
-          <div className="role-item">
-            <div className="role-icon">🏷️</div>
-            <span className="role-text">Use the correct file naming format for uploads</span>
-          </div>
-          <div className="role-item">
-            <div className="role-icon">💬</div>
-            <span className="role-text">Communicate questions — we're here to help!</span>
-          </div>
-          <div className="role-item">
-            <div className="role-icon">🌟</div>
-            <span className="role-text">Have fun and let your personality shine—people love real smiles and genuine moments!</span>
-          </div>
-        </div>
-      </div>
-
-      <div className="navigation-hint">
-        <h3>🧭 How to Navigate This Guide</h3>
-        <div className="navigation-instructions">
-          <div className="nav-instruction">
-            <span className="nav-icon">👈</span>
-            <div className="nav-text">
-              <strong>Use the sidebar navigation</strong> on the left to explore each content assignment
-            </div>
-          </div>
-          <div className="nav-instruction">
-            <span className="nav-icon">📋</span>
-            <div className="nav-text">
-              Click on the content sections to see detailed requirements for your August posts:
-              <ul style={{ marginTop: '0.5rem', paddingLeft: '1rem' }}>
-                <li><strong>Back to School Balance</strong> - 4-photo carousel (Tuesday, Aug 5)</li>
-                <li><strong>Pencil Grip Strength</strong> - 7-photo collage (Friday, Aug 8)</li>
-              </ul>
-            </div>
-          </div>
-          <div className="nav-instruction">
-            <span className="nav-icon">📤</span>
-            <div className="nav-text">
-              The content section includes upload checklists and direct SharePoint links for easy submission
-            </div>
-          </div>
-          <div className="nav-instruction">
-            <span className="nav-icon">📖</span>
-            <div className="nav-text">
-              Visit the "Guidelines" and "Technical" sections for detailed quality standards and best practices
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* News & Updates Section */}
       <div className="news-updates-section">
         <div className="news-feed-header">
@@ -194,7 +129,72 @@ export function IntroSection() {
           </article>
         </div>
       </div>
-      
+
+      {/* Your Role Section */}
+      <div className="role-section">
+        <h2 className="role-title">Your Role as Content Creator</h2>
+        <div className="role-grid">
+          <div className="role-item">
+            <div className="role-icon">✨</div>
+            <span className="role-text">Represent the gym with professionalism and positivity</span>
+          </div>
+          <div className="role-item">
+            <div className="role-icon">📸</div>
+            <span className="role-text">Capture high-quality, on-brand content (photos and videos)</span>
+          </div>
+          <div className="role-item">
+            <div className="role-icon">🛡️</div>
+            <span className="role-text">Follow technique, safety, and privacy rules</span>
+          </div>
+          <div className="role-item">
+            <div className="role-icon">🏷️</div>
+            <span className="role-text">Use the correct file naming format for uploads</span>
+          </div>
+          <div className="role-item">
+            <div className="role-icon">💬</div>
+            <span className="role-text">Communicate questions — we're here to help!</span>
+          </div>
+          <div className="role-item">
+            <div className="role-icon">🌟</div>
+            <span className="role-text">Have fun and let your personality shine—people love real smiles and genuine moments!</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="navigation-hint">
+        <h3>🧭 How to Navigate This Guide</h3>
+        <div className="navigation-instructions">
+          <div className="nav-instruction">
+            <span className="nav-icon">👈</span>
+            <div className="nav-text">
+              <strong>Use the sidebar navigation</strong> on the left to explore each content assignment
+            </div>
+          </div>
+          <div className="nav-instruction">
+            <span className="nav-icon">📋</span>
+            <div className="nav-text">
+              Click on the content sections to see detailed requirements for your August posts:
+              <ul style={{ marginTop: '0.5rem', paddingLeft: '1rem' }}>
+                <li><strong>Back to School Balance</strong> - 4-photo carousel (Tuesday, Aug 5)</li>
+                <li><strong>Pencil Grip Strength</strong> - 7-photo collage (Friday, Aug 8)</li>
+              </ul>
+            </div>
+          </div>
+          <div className="nav-instruction">
+            <span className="nav-icon">📤</span>
+            <div className="nav-text">
+              The content section includes upload checklists and direct SharePoint links for easy submission
+            </div>
+          </div>
+          <div className="nav-instruction">
+            <span className="nav-icon">📖</span>
+            <div className="nav-text">
+              Visit the "Guidelines" and "Technical" sections for detailed quality standards and best practices
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Expandable Guidelines Cards */}
       <div className="guidelines-cards">
         <div id="guidelines-section" className="interactive-card" onClick={() => toggleCard('guidelines')}>
