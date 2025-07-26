@@ -2,21 +2,12 @@ import React from 'react';
 import { ContentBadge } from '../ContentBadge';
 import { UploadChecklist } from '../UploadChecklist';
 import { GymSelector } from '../GymSelector';
+import { CreateYourOwnContentSection } from './CreateYourOwnContentSection';
 
-interface CreateYourOwnContentPostProps {
-  onSectionChange?: (section: string) => void;
-}
-
-export function CreateYourOwnContentPost({ onSectionChange }: CreateYourOwnContentPostProps) {
+export function CreateYourOwnContentPost() {
   const checklistItems = [
     { id: 'custom-reel', label: 'Your Custom 30-60 Second Reel', type: 'video' as const },
   ];
-
-  const handleGoToIdeasHub = () => {
-    if (onSectionChange) {
-      onSectionChange('create-your-own-content');
-    }
-  };
 
   return (
     <div>
@@ -60,57 +51,8 @@ export function CreateYourOwnContentPost({ onSectionChange }: CreateYourOwnConte
       <div className="content-section">
         <h3>🤹‍♀️ Need Inspiration?</h3>
         
-        <div className="inspiration-link-section">
-          <div className="inspiration-header">
-            <h4>✨ Content Ideas to Spark Your Creativity</h4>
-            <p>Browse by your current mood or search for anything that inspires you.</p>
-            
-            <div className="reminder-box">
-              <strong>💡 Reminder:</strong> These are just starting points, not scripts. Use them as-is, tweak them, mix and match, or let them spark something completely different. There's no "right" way to use them—what matters is that it feels authentic to you.
-            </div>
-          </div>
-
-          <div className="ideas-hub-access">
-            <button 
-              onClick={handleGoToIdeasHub}
-              className="ideas-hub-btn"
-            >
-              🚀 Browse Content Ideas Hub
-            </button>
-            <p className="ideas-hub-description">
-              Access our complete collection of ~150 interactive content prompts organized by mood and theme
-            </p>
-          </div>
-
-          <div className="ideas-preview">
-            <h5>🎲 What You'll Find:</h5>
-            <div className="mood-preview-grid">
-              <div className="mood-preview-item">
-                <span className="mood-emoji">✨</span>
-                <span>Everything (134)</span>
-              </div>
-              <div className="mood-preview-item">
-                <span className="mood-emoji">🌟</span>
-                <span>Progress Stories (18)</span>
-              </div>
-              <div className="mood-preview-item">
-                <span className="mood-emoji">🎪</span>
-                <span>Playful & Fun (44)</span>
-              </div>
-              <div className="mood-preview-item">
-                <span className="mood-emoji">👨‍🏫</span>
-                <span>Educational (28)</span>
-              </div>
-              <div className="mood-preview-item">
-                <span className="mood-emoji">💫</span>
-                <span>Community (18)</span>
-              </div>
-              <div className="mood-preview-item">
-                <span className="mood-emoji">🔥</span>
-                <span>Behind-the-Scenes (26)</span>
-              </div>
-            </div>
-          </div>
+        <div className="embedded-content-ideas">
+          <CreateYourOwnContentSection />
         </div>
       </div>
 

@@ -45,7 +45,7 @@ export function MainContent({ activeSection, onSectionChange }: MainContentProps
       case 'six-shapes':
         return <SixShapesSection />;
       case 'create-your-own-content-post':
-        return <CreateYourOwnContentPost onSectionChange={onSectionChange} />;
+        return <CreateYourOwnContentPost />;
       case 'create-your-own-content':
         return <CreateYourOwnContentSection />;
       case 'guidelines':
