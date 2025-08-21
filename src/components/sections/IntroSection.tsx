@@ -61,20 +61,6 @@ export function IntroSection() {
         <div className="news-feed">
           <article className="news-article featured">
             <div className="news-meta">
-              <span className="news-badge breaking">🔥 BREAKING</span>
-              <time className="news-date">July 9, 2025</time>
-            </div>
-            <h3 className="news-headline">August Content is Now Live!</h3>
-            <p className="news-summary">
-              All August content assignments are now available! Check out the new content sections in the sidebar to see your complete mission for capturing summer magic.
-            </p>
-            <div className="news-reminder">
-              <strong>⏰ Reminder:</strong> Content must be collected in July and submitted by July 31st for August posting.
-            </div>
-          </article>
-          
-          <article className="news-article featured">
-            <div className="news-meta">
               <span className="news-badge info">📝 PROCESS NOTE</span>
               <time className="news-date">July 2025</time>
             </div>
@@ -108,6 +94,20 @@ export function IntroSection() {
               <p style={{ marginTop: '1rem', fontStyle: 'italic', color: '#8B4A4A' }}>
                 <strong>Thanks for being awesome! Your content makes the difference. 💪</strong>
               </p>
+            </div>
+          </article>
+          
+          <article className="news-article featured">
+            <div className="news-meta">
+              <span className="news-badge breaking">🔥 BREAKING</span>
+              <time className="news-date">July 9, 2025</time>
+            </div>
+            <h3 className="news-headline">August Content is Now Live!</h3>
+            <p className="news-summary">
+              All August content assignments are now available! Check out the new content sections in the sidebar to see your complete mission for capturing summer magic.
+            </p>
+            <div className="news-reminder">
+              <strong>⏰ Reminder:</strong> Content must be collected in July and submitted by July 31st for August posting.
             </div>
           </article>
           
