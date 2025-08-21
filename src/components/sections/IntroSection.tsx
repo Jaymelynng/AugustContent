@@ -61,6 +61,17 @@ export function IntroSection() {
         <div className="news-feed">
           <article className="news-article featured">
             <div className="news-meta">
+              <span className="news-badge info">📅 UPDATE</span>
+              <time className="news-date">August 2, 2025</time>
+            </div>
+            <h3 className="news-headline">Quick Schedule Update</h3>
+            <p className="news-summary">
+              Just a quick update—transitioning to the monthly content schedule this summer, along with some scheduling adjustments, has shifted my schedule and put social media a bit behind. I'm working on ways to streamline things for all of us. Keep capturing and collecting great content as you see it for future content, and feel free to reference the Content Ideas Hub for quick inspiration!
+            </p>
+          </article>
+          
+          <article className="news-article featured">
+            <div className="news-meta">
               <span className="news-badge info">📝 PROCESS NOTE</span>
               <time className="news-date">July 2025</time>
             </div>
