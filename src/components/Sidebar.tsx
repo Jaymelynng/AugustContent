@@ -38,7 +38,7 @@ export function Sidebar({ activeSection, onSectionChange }: SidebarProps) {
     setIsMobileVisible(!isMobileVisible);
   };
 
-  const renderSection = (category: string, title: string, items: typeof navigationItems) => (
+  const renderSection = (category: string, title: string, items: typeof navigationItems, isSpecial = false) => (
     <div className="nav-section">
       <div className="nav-section-title">{title}</div>
       {items
@@ -47,7 +47,7 @@ export function Sidebar({ activeSection, onSectionChange }: SidebarProps) {
           <li key={item.id}>
             <button
               onClick={() => onSectionChange(item.id)}
-              className={`nav-btn ${activeSection === item.id ? 'active' : ''}`}
+              className={`nav-btn ${activeSection === item.id ? 'active' : ''} ${isSpecial ? 'nav-btn-special' : ''}`}
             >
               {item.label}
             </button>
@@ -74,7 +74,7 @@ export function Sidebar({ activeSection, onSectionChange }: SidebarProps) {
       <ul className="nav-list">
         {renderSection('home', 'Welcome', navigationItems)}
         {renderSection('content', 'Content', navigationItems)}
-        {renderSection('ideas', 'Content Ideas', navigationItems)}
+        {renderSection('ideas', 'Content Ideas', navigationItems, true)}
         {renderSection('guides', 'Guides', navigationItems)}
       </ul>
     </aside>
