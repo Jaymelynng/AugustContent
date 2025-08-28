@@ -73,8 +73,8 @@ export function Sidebar({ activeSection, onSectionChange }: SidebarProps) {
       
       <ul className="nav-list">
         {renderSection('home', 'Welcome', navigationItems)}
-        {renderSection('content', 'Content', navigationItems)}
         {renderSection('ideas', 'Content Ideas', navigationItems, true)}
+        {renderSection('content', 'Content', navigationItems)}
         {renderSection('guides', 'Guides', navigationItems)}
       </ul>
     </aside>
